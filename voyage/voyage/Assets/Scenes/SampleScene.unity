@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 722799041}
   - component: {fileID: 722799043}
   - component: {fileID: 722799042}
+  - component: {fileID: 722799044}
   m_Layer: 0
   m_Name: Tokyo
   m_TagString: HongKong
@@ -318,6 +319,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &722799044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722799040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b708fe9de5c604ea2bf4798b13c29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleep_time: 2
+  cloud1: {fileID: 1393199553942880212, guid: 73f02a8b907976649840a461d8bbdcfb, type: 3}
+  cloud2: {fileID: 1961631366139048466, guid: ceecc48fa79f31c46abc9c57ea59edde, type: 3}
 --- !u!1 &772758886
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +667,7 @@ GameObject:
   - component: {fileID: 1461900382}
   - component: {fileID: 1461900380}
   - component: {fileID: 1461900385}
+  - component: {fileID: 1461900386}
   m_Layer: 7
   m_Name: ship1
   m_TagString: Untagged
@@ -767,6 +784,32 @@ MonoBehaviour:
   - {fileID: 1984540815}
   - {fileID: 1637389158}
   - {fileID: 873854358}
+--- !u!61 &1461900386
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461900379}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.19, y: 3}
+    newSize: {x: 5.19, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &1471096714
 GameObject:
   m_ObjectHideFlags: 0

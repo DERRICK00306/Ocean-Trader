@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - HongKong
+  - Singapore
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - background
+  - ship
+  - route
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: route
+    uniqueID: 685442831
+    locked: 0
+  - name: background
+    uniqueID: 1354183239
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: ship
+    uniqueID: 2399122897
+    locked: 0
+  - name: cloud
+    uniqueID: 4186983411
+    locked: 0

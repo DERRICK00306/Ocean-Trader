@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu.unity
+    guid: 3833c972c5533e143a2e1b611d3e2e7b
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level2/Japan.unity
+    guid: 53d5757cdd7c4cd4a8429f3a40175d8c
+  - enabled: 1
+    path: Assets/Scenes/Level3/Japan_Bar.unity
+    guid: c2890d01cddce5846b030c6f300e52c8
+  - enabled: 1
+    path: Assets/Scenes/Level3/Japan_Exchange.unity
+    guid: c7048e7f20d6f034da172c61effbe889
   m_configObjects: {}

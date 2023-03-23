@@ -36,6 +36,14 @@ public class sail : MonoBehaviour
             {
                 route = "1-3";
             }
+            if (transform.position == ports[4].transform.position)
+            {
+                route = "4-1";
+            }
+            if (transform.position == ports[5].transform.position)
+            {
+                route = "5-1";
+            }
         }
 
 
@@ -57,6 +65,10 @@ public class sail : MonoBehaviour
             if (transform.position == ports[3].transform.position)
             {
                 route = "3-0";
+            }
+            if (transform.position == ports[12].transform.position)
+            {
+                route = "12-0";
             }
         }
 
@@ -111,7 +123,14 @@ public class sail : MonoBehaviour
             {
                 route = "6-4";
             }
-
+            if (transform.position == ports[1].transform.position)
+            {
+                route = "1-4";
+            }
+            if (transform.position == ports[13].transform.position)
+            {
+                route = "13-4";
+            }
         }
 
 
@@ -125,6 +144,14 @@ public class sail : MonoBehaviour
             if (transform.position == ports[6].transform.position)
             {
                 route = "6-5";
+            }
+            if (transform.position == ports[1].transform.position)
+            {
+                route = "1-5";
+            }
+            if (transform.position == ports[9].transform.position)
+            {
+                route = "9-5";
             }
         }
 
@@ -141,6 +168,14 @@ public class sail : MonoBehaviour
             {
                 route = "5-6";
             }
+            if (transform.position == ports[8].transform.position)
+            {
+                route = "9-6";
+            }
+            if (transform.position == ports[10].transform.position)
+            {
+                route = "10-6";
+            }
         }
 
 
@@ -156,6 +191,10 @@ public class sail : MonoBehaviour
             if (transform.position == ports[9].transform.position)
             {
                 route = "9-7";
+            }
+            if (transform.position == ports[10].transform.position)
+            {
+                route = "10-7";
             }
         }
 
@@ -185,6 +224,14 @@ public class sail : MonoBehaviour
             {
                 route = "8-9";
             }
+            if (transform.position == ports[6].transform.position)
+            {
+                route = "6-9";
+            }
+            if (transform.position == ports[5].transform.position)
+            {
+                route = "5-9";
+            }
         }
 
 
@@ -203,6 +250,14 @@ public class sail : MonoBehaviour
             if (transform.position == ports[13].transform.position)
             {
                 route = "13-10";
+            }
+            if (transform.position == ports[6].transform.position)
+            {
+                route = "6-10";
+            }
+            if (transform.position == ports[7].transform.position)
+            {
+                route = "7-10";
             }
         }
 
@@ -243,6 +298,10 @@ public class sail : MonoBehaviour
             {
                 route = "13-12";
             }
+            if (transform.position == ports[0].transform.position)
+            {
+                route = "0-12";
+            }
         }
 
 
@@ -261,6 +320,10 @@ public class sail : MonoBehaviour
             if (transform.position == ports[12].transform.position)
             {
                 route = "12-13";
+            }
+            if (transform.position == ports[4].transform.position)
+            {
+                route = "4-13";
             }
         }
 
@@ -1681,5 +1744,539 @@ public class sail : MonoBehaviour
                 route = "";
             }
         }
+
+
+
+
+
+        if (route == "1-4")
+        {
+            if (i == 0 && transform.position != routes[42].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+            }
+            if (transform.position == routes[42].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != routes[43].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+            }
+            if (transform.position == routes[43].transform.position)
+            {
+                i = 2;
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+            }
+            if (i == 2 && transform.position != routes[44].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+            }
+            if (transform.position == routes[44].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+            }
+            if (i == 3 && transform.position != ports[4].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+            }
+            if (transform.position == ports[4].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+
+
+
+        if (route == "4-1")
+        {
+            if (i == 0 && transform.position != routes[44].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+            }
+            if (transform.position == routes[44].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != routes[43].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+            }
+            if (transform.position == routes[43].transform.position)
+            {
+                i = 2;
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+            }
+            if (i == 2 && transform.position != routes[42].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+            }
+            if (transform.position == routes[42].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+            }
+            if (i == 3 && transform.position != ports[1].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+            }
+            if (transform.position == ports[1].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+
+
+
+        if (route == "1-5")
+        {
+            if (i == 0 && transform.position != routes[45].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+            }
+            if (transform.position == routes[45].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != routes[46].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+            }
+            if (transform.position == routes[46].transform.position)
+            {
+                i = 2;
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+            }
+            if (i == 2 && transform.position != routes[47].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+            }
+            if (transform.position == routes[47].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+            }
+            if (i == 3 && transform.position != routes[48].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+            }
+            if (transform.position == routes[48].transform.position)
+            {
+                i = 4;
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+            }
+            if (i == 4 && transform.position != ports[5].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+            }
+            if (transform.position == ports[5].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+
+
+        if (route == "5-1")
+        {
+            if (i == 0 && transform.position != routes[48].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+            }
+            if (transform.position == routes[48].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != routes[47].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+            }
+            if (transform.position == routes[47].transform.position)
+            {
+                i = 2;
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+            }
+            if (i == 2 && transform.position != routes[46].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+            }
+            if (transform.position == routes[46].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+            }
+            if (i == 3 && transform.position != routes[45].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+            }
+            if (transform.position == routes[45].transform.position)
+            {
+                i = 4;
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+            }
+            if (i == 4 && transform.position != ports[1].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+            }
+            if (transform.position == ports[1].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+
+
+
+
+        if (route == "0-12")
+        {
+            if (i == 0 && transform.position != routes[49].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.05f);
+            }
+            if (transform.position == routes[49].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.005f);
+            }
+            if (i == 1 && transform.position != routes[50].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.005f);
+            }
+            if (transform.position == routes[50].transform.position)
+            {
+                i = 2;
+                transform.position = routes[51].transform.position;
+            }
+            if (i==2 && transform.position == routes[51].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.005f);
+            }
+            if (i == 3 && transform.position != ports[12].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.005f);
+            }
+            if (transform.position == ports[12].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+        if (route == "12-0")
+        {
+            if (i == 0 && transform.position != routes[51].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[51].transform.position, 0.005f);
+            }
+            if (transform.position == routes[51].transform.position)
+            {
+                i = 1;
+                transform.position = routes[50].transform.position;
+            }
+            if (i==1 && transform.position == routes[50].transform.position)
+            {
+                i = 2;
+                transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.005f);
+            }
+            if (i == 2 && transform.position != routes[49].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.005f);
+            }
+            if (transform.position == routes[49].transform.position)
+            {
+                i = 3;
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.005f);
+            }
+            if (i == 3 && transform.position != ports[0].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.005f);
+            }
+            if (transform.position == ports[0].transform.position)
+            {
+                i = 0;
+                route = "";
+            }
+        }
+
+
+
+
+
+        if (route == "6-9")
+        {
+            if (i == 0 && transform.position != routes[52].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, 0.01f);
+            }
+            if (transform.position == routes[52].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[9].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+            }
+            if (transform.position == ports[9].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+
+        if (route == "9-6")
+        {
+            if (i == 0 && transform.position != routes[52].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, 0.01f);
+            }
+            if (transform.position == routes[52].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[6].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+            }
+            if (transform.position == ports[6].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+
+        if (route == "5-9")
+        {
+            if (i == 0 && transform.position != routes[53].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, 0.01f);
+            }
+            if (transform.position == routes[53].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[9].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+            }
+            if (transform.position == ports[9].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+        if (route == "9-5")
+        {
+            if (i == 0 && transform.position != routes[53].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, 0.01f);
+            }
+            if (transform.position == routes[53].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[5].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+            }
+            if (transform.position == ports[5].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+
+        if (route == "4-13")
+        {
+            if (i == 0 && transform.position != routes[54].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, 0.01f);
+            }
+            if (transform.position == routes[54].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[13].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+            }
+            if (transform.position == ports[13].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+
+        if (route == "13-4")
+        {
+            if (i == 0 && transform.position != routes[54].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, 0.01f);
+            }
+            if (transform.position == routes[54].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[4].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+            }
+            if (transform.position == ports[4].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+        if (route == "6-10")
+        {
+            if (i == 0 && transform.position != routes[55].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, 0.01f);
+            }
+            if (transform.position == routes[55].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[10].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+            }
+            if (transform.position == ports[10].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+        if (route == "10-6")
+        {
+            if (i == 0 && transform.position != routes[55].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, 0.01f);
+            }
+            if (transform.position == routes[55].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[6].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+            }
+            if (transform.position == ports[6].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+        if (route == "7-10")
+        {
+            if (i == 0 && transform.position != routes[56].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, 0.01f);
+            }
+            if (transform.position == routes[56].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[10].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+            }
+            if (transform.position == ports[10].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+        if (route == "10-7")
+        {
+            if (i == 0 && transform.position != routes[56].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, 0.01f);
+            }
+            if (transform.position == routes[56].transform.position)
+            {
+                i = 1;
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+            }
+            if (i == 1 && transform.position != ports[7].transform.position)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+            }
+            if (transform.position == ports[7].transform.position)
+            {
+                route = "";
+                i = 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

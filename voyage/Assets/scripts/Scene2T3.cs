@@ -10,6 +10,7 @@ public class Scene2T3 : MonoBehaviour
     public void change_scene()
     {
         SceneManager.LoadScene(Scene_Name);
+        GameObject.Find("ship1").transform.position = GameObject.Find("dontdestroy").transform.position;
     }
     
 }

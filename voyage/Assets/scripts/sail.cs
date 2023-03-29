@@ -8,11 +8,14 @@ public class sail : MonoBehaviour
     public GameObject[] ports;
     string route;
     int i = 0;
+    public int totalmoney = 0;
+    public int carry = 500;
     // Start is called before the first frame update
     void Start()
     {
         
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -168,7 +171,7 @@ public class sail : MonoBehaviour
             {
                 route = "5-6";
             }
-            if (transform.position == ports[8].transform.position)
+            if (transform.position == ports[9].transform.position)
             {
                 route = "9-6";
             }
@@ -2280,3 +2283,8 @@ public class sail : MonoBehaviour
 
     }
 }
+
+
+
+
+

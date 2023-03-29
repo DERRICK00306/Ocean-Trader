@@ -22,6 +22,7 @@ public class port : MonoBehaviour
         Instantiate(cloud2, new Vector2(18,8),Quaternion.identity);
         Instantiate(audio_source);
         yield return new WaitForSeconds(2);
+        GameObject.Find("dontdestroy").transform.position = GameObject.Find("ship1").transform.position;
         SceneManager.LoadScene("Japan");
 
     }
@@ -31,3 +32,7 @@ public class port : MonoBehaviour
         
     }
 }
+
+
+
+

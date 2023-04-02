@@ -8,18 +8,25 @@ public class sail : MonoBehaviour
     public GameObject[] ports;
     string route;
     int i = 0;
-    public int totalmoney = 0;
-    public int carry = 500;
+    public static int totalmoney = 100;
+    public static int carry = 500;
+    public static int change = 0;
+    public static int arrival = 0;
     // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
-        
+        if (sail.change == 1)
+        {
+            transform.position = GameObject.Find("remember").GetComponent<remember>().position;
+        }
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        sail.change = 1;
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
 
@@ -47,6 +54,7 @@ public class sail : MonoBehaviour
             {
                 route = "5-1";
             }
+            sail.arrival = 0;
         }
 
 
@@ -73,6 +81,7 @@ public class sail : MonoBehaviour
             {
                 route = "12-0";
             }
+            sail.arrival = 0;
         }
 
 
@@ -92,6 +101,7 @@ public class sail : MonoBehaviour
             {
                 route = "3-2";
             }
+            sail.arrival = 0;
         }
 
 
@@ -110,6 +120,7 @@ public class sail : MonoBehaviour
             {
                 route = "2-3";
             }
+            sail.arrival = 0;
         }
 
 
@@ -134,6 +145,7 @@ public class sail : MonoBehaviour
             {
                 route = "13-4";
             }
+            sail.arrival = 0;
         }
 
 
@@ -156,6 +168,7 @@ public class sail : MonoBehaviour
             {
                 route = "9-5";
             }
+            sail.arrival = 0;
         }
 
 
@@ -179,6 +192,7 @@ public class sail : MonoBehaviour
             {
                 route = "10-6";
             }
+            sail.arrival = 0;
         }
 
 
@@ -199,6 +213,7 @@ public class sail : MonoBehaviour
             {
                 route = "10-7";
             }
+            sail.arrival = 0;
         }
 
 
@@ -213,6 +228,7 @@ public class sail : MonoBehaviour
             {
                 route = "9-8";
             }
+            sail.arrival = 0;
         }
 
 
@@ -235,6 +251,7 @@ public class sail : MonoBehaviour
             {
                 route = "5-9";
             }
+            sail.arrival = 0;
         }
 
 
@@ -262,6 +279,7 @@ public class sail : MonoBehaviour
             {
                 route = "7-10";
             }
+            sail.arrival = 0;
         }
 
 
@@ -281,6 +299,7 @@ public class sail : MonoBehaviour
             {
                 route = "13-11";
             }
+            sail.arrival = 0;
         }
 
 
@@ -305,6 +324,7 @@ public class sail : MonoBehaviour
             {
                 route = "0-12";
             }
+            sail.arrival = 0;
         }
 
 
@@ -328,6 +348,7 @@ public class sail : MonoBehaviour
             {
                 route = "4-13";
             }
+            sail.arrival = 0;
         }
 
 
@@ -420,6 +441,8 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port.firstarrival = 1;
+                sail.arrival = 1;
             }
         }
 

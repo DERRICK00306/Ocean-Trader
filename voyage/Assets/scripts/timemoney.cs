@@ -5,18 +5,18 @@ using TMPro;
 
 public class timemoney : MonoBehaviour
 {
-    public TextMeshProUGUI Text;
+    public TextMeshProUGUI Text1;
     // Start is called before the first frame update
     void Start()
     {
-        Text = transform.GetComponent<TextMeshProUGUI>();
+        Text1 = transform.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        int moneyoutput = GameObject.Find("ship1").GetComponent<sail>().totalmoney;
-        int carryoutput = GameObject.Find("ship1").GetComponent<sail>().carry;
-        Text.text = "Money: " + moneyoutput + " ;Carry: "+carryoutput + "/500";
+        int moneyoutput = sail.totalmoney;
+        int carryoutput = sail.carry;
+        Text1.text = "Money: " + moneyoutput + " ;Carry: "+carryoutput + "/500";
     }
 }

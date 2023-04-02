@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dontdestroy : MonoBehaviour
+public class remember : MonoBehaviour
 {
-    public GameObject remember;
+    public Vector3 position;
+    // Start is called before the first frame update
+
     void Awake()
     {
-        DontDestroyOnLoad(remember);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     // Update is called once per frame

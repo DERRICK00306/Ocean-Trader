@@ -8,17 +8,18 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 7.3333335
-    y: 90
-    width: 1265.3334
-    height: 622.6667
+    x: 19
+    y: 53
+    width: 1269
+    height: 765
   m_ShowMode: 4
+city-landscape
   m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
@@ -44,8 +45,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1265.3334
-    height: 622.6667
+    width: 1269
+    height: 765
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +70,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1265.3334
+    width: 1269
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -90,8 +91,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 602.6667
-    width: 1265.3334
+    y: 745
+    width: 1269
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -114,11 +115,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1265.3334
-    height: 572.6667
+    width: 1269
+    height: 715
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+ city-landscape
   controlID: 61
 --- !u!114 &6
 MonoBehaviour:
@@ -139,11 +141,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 904.6667
-    height: 572.6667
+    width: 979
+    height: 715
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+city-landscape
   controlID: 62
 --- !u!114 &7
 MonoBehaviour:
@@ -164,11 +167,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 904.6667
-    height: 372.66666
+    width: 979
+    height: 463
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+ city-landscape
   controlID: 63
 --- !u!114 &8
 MonoBehaviour:
@@ -187,6 +191,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+city-landscape
     width: 269.33334
     height: 372.66666
   m_MinSize: {x: 201, y: 221}
@@ -211,10 +216,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 269.33334
+    x: 266.5
     y: 0
-    width: 635.3334
-    height: 372.66666
+    width: 712.5
+    height: 463
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -239,6 +244,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+ city-landscape
     y: 372.66666
     width: 904.6667
     height: 200.00003
@@ -265,10 +271,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 904.6667
+    x: 979
     y: 0
+ city-landscape
     width: 360.6667
     height: 572.6667
+
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -296,10 +304,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 912
-    y: 120
-    width: 359.6667
-    height: 551.6667
+    x: 998
+    y: 83
+    width: 289
+    height: 694
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -311,7 +319,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 570
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -337,10 +345,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 120
-    width: 268.33334
-    height: 351.66666
+    x: 19
+    y: 83
+    width: 265.5
+    height: 442
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -348,9 +356,11 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+ city-landscape
       m_SelectedIDs: 84770000
       m_LastClickedID: 30596
       m_ExpandedIDs: 68f7ffff6af7ffff14faffff8a770000
+
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -394,10 +404,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 243.33334
-    y: 112.66667
-    width: 670
-    height: 361
+    x: 382
+    y: 210
+    width: 648.5
+    height: 359
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -654,9 +664,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.67742825, y: -0.1208572, z: -10.027572}
+    m_Target: {x: -3.087437, y: -2.6079996, z: -7.8056927}
     speed: 2
-    m_Value: {x: -0.67742825, y: -0.1208572, z: -10.027572}
+    m_Value: {x: -3.087437, y: -2.6079996, z: -7.8056927}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -707,9 +717,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.949512
+    m_Target: 5.4287157
     speed: 2
-    m_Value: 12.949512
+    m_Value: 5.4287157
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -754,10 +764,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 276.6667
-    y: 120
-    width: 633.3334
-    height: 351.66666
+    x: 285.5
+    y: 83
+    width: 710.5
+    height: 442
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -783,10 +793,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -640
-    m_HBaseRangeMax: 640
-    m_VBaseRangeMin: -360
-    m_VBaseRangeMax: 360
+    m_HBaseRangeMin: -480
+    m_HBaseRangeMax: 480
+    m_VBaseRangeMin: -270
+    m_VBaseRangeMax: 270
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -804,23 +814,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 633.3334
-      height: 330.66666
-    m_Scale: {x: 0.45925927, y: 0.45925924}
-    m_Translation: {x: 316.6667, y: 165.33333}
+      width: 710.5
+      height: 421
+    m_Scale: {x: 0.74010414, y: 0.74010414}
+    m_Translation: {x: 355.25, y: 210.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -689.5162
-      y: -360
-      width: 1379.0323
-      height: 720
+      x: -480.00003
+      y: -284.41943
+      width: 960.00006
+      height: 568.83887
     m_MinimalGUI: 1
-  m_defaultScale: 0.45925924
-  m_LastWindowPixelSize: {x: 950.00006, y: 527.5}
+  m_defaultScale: 0.74010414
+  m_LastWindowPixelSize: {x: 1421, y: 884}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -846,10 +856,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 492.6667
-    width: 903.6667
-    height: 179.00003
+    x: 19
+    y: 546
+    width: 978
+    height: 231
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -867,22 +877,28 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+ city-landscape
     - Assets/scripts
+
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+ city-landscape
   - Assets/scripts
+
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\HKU\Learning materials\Y3SEM2\COMP3329\Group_Project\Trial\Unity-Navigation-Times\voyage
+  m_LastProjectPath: /Users/songziyan/Desktop/Unity-Navigation-Times/voyage
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+ city-landscape
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 8e630000
     m_LastClickedID: 25486
     m_ExpandedIDs: 000000008063000082630000846300008c63000000ca9a3b
+
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -910,7 +926,9 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+ city-landscape
     m_ExpandedIDs: 00000000806300008263000084630000
+
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -937,7 +955,9 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+city-landscape
     m_HadKeyboardFocusLastEvent: 1
+
     m_ExpandedInstanceIDs: c6230000385e00002a8c000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -954,7 +974,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -986,10 +1006,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 492.6667
-    width: 903.6667
-    height: 179.00003
+    x: 19
+    y: 546
+    width: 978
+    height: 231
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

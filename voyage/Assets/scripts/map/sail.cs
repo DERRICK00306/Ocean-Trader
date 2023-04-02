@@ -8,8 +8,6 @@ public class sail : MonoBehaviour
     public GameObject[] ports;
     string route;
     int i = 0;
-    public static int totalmoney = 100;
-    public static int carry = 500;
     public static int change = 0;
     public static int arrival = 0;
     // Start is called before the first frame update

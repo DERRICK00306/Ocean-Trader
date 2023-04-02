@@ -15,8 +15,8 @@ public class timemoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int moneyoutput = sail.totalmoney;
-        int carryoutput = sail.carry;
+        int moneyoutput = Global.Money;
+        int carryoutput = Global.Carry;
         Text1.text = "Money: " + moneyoutput + " ;Carry: "+carryoutput + "/500";
     }
 }

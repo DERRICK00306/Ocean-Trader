@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class port : MonoBehaviour
 {
-    public float sleep_time = 4;
-    public GameObject cloud1, cloud2;
-    public AudioSource audio_source;
     public static int firstarrival = 1;
     // Start is called before the first frame update
     void Start()

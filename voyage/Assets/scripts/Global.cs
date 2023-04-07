@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Global : MonoBehaviour
 {
-    public static Dictionary<string, Dictionary<string, int>> price = 
+    public static Dictionary<string, Dictionary<string, int>> price =
         new Dictionary<string, Dictionary<string, int>>()
         {
             {"Tokyo",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",7}, {"Kimono",15}, {"Jewery",40} } },
@@ -40,4 +40,6 @@ public class Global : MonoBehaviour
         {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
         {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
     };
+
+    public static int Carry = 0;
 }

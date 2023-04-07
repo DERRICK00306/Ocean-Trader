@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HongKong
   - Singapore
+  - Event
   layers:
   - Default
   - TransparentFX

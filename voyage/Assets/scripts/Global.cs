@@ -40,6 +40,4 @@ public class Global : MonoBehaviour
         {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
         {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
     };
-
-    public static int Carry = 0;
 }

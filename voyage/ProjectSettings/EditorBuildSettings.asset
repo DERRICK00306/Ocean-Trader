@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Japan_Exchange.unity
     guid: c7048e7f20d6f034da172c61effbe889
+  - enabled: 1
+    path: Assets/Scenes/Level3/Japan_Yard.unity
+    guid: f505416f323f84e29aa3ceb50a0b2d2b
   m_configObjects: {}

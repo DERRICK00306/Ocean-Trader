@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2635822315742456011}
   - component: {fileID: 6300946479845386378}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

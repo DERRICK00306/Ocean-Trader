@@ -54,7 +54,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",13}, {"Tea",10}, {"Jewery",25}, {"Spice",6},{"Milk",4},
                                                     {"Wine",15}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
                                                      } },
-            {"SF",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",7},{"Beef",9},
+            {"San_Francisco",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",7},{"Beef",9},
                                                     {"Kimono",13}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
                                                     {"Wine",14}, {"Fur",31}, {"Chocolate",8}, {"Handcraft",13}
                                                      } },
@@ -62,7 +62,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",14}, {"Tea",9}, {"Jewery",26}, {"Spice",7},{"Milk",5},
                                                     {"Wine",14}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
                                                      } },
-            {"BA",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",10}, {"Bread",10}, {"Wood",7},{"Beef",9},
+            {"Brenos_Aries",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",10}, {"Bread",10}, {"Wood",7},{"Beef",9},
                                                     {"Kimono",14}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
                                                     {"Wine",14}, {"Fur",29}, {"Chocolate",7}, {"Handcraft",13}
                                                      } },

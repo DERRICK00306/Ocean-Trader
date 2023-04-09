@@ -11,7 +11,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",33}, {"Spice",5},{"Milk",9},
                                                     {"Wine",16}, {"Fur",19}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
-            {"HK",   new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+            {"Hong_Kong",   new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",35}, {"Spice",4},{"Milk",8},
                                                     {"Wine",16}, {"Fur",18}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
@@ -50,7 +50,7 @@ public class Global : MonoBehaviour
                                                     {"Wine",18}, {"Fur",19}, {"Chocolate",8}, {"Handcraft",12}
                                                      } },
 
-            {"NY",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",6},{"Beef",9},
+            {"New_York",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",6},{"Beef",9},
                                                     {"Kimono",13}, {"Tea",10}, {"Jewery",25}, {"Spice",6},{"Milk",4},
                                                     {"Wine",15}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
                                                      } },

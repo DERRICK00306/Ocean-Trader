@@ -5255,7 +5255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   A: {fileID: 1191752482}
-  city_name: Hong_Kong
+  city_name: Good_Hope
   commodity1: Kimono
   commodity2: Spice
   commodity3: Tea
@@ -14302,7 +14302,7 @@ MonoBehaviour:
   total13: 0
   total14: 0
   warning: {fileID: 4413990560602225150, guid: 59fa0e0e289c81746acd234af924a68d, type: 3}
-  city_name: Hong_Kong
+  city_name: Good_Hope
   price_text1: {fileID: 1100759308}
   price_text2: {fileID: 1406410913}
   price_text3: {fileID: 652134520}
@@ -21709,7 +21709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6058ca590dbc08440b30bab73b6eb243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene_Name: Hong_Kong
+  Scene_Name: Good_Hope
   cloud1: {fileID: 1393199553942880212, guid: 73f02a8b907976649840a461d8bbdcfb, type: 3}
   cloud2: {fileID: 1961631366139048466, guid: ceecc48fa79f31c46abc9c57ea59edde, type: 3}
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}

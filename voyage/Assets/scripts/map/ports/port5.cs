@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class port : MonoBehaviour
+public class port5 : MonoBehaviour
 {
-    public static int firstarrival = 1;
+    public static int firstarrivalalex = 0;
     public GameObject cloud1, cloud2;
     public AudioSource audio_source;
     bool initiate = true;
@@ -20,8 +20,8 @@ public class port : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        
-        if (port.firstarrival == 1 && sail.arrival == 1)
+
+        if (port5.firstarrivalalex == 1 && sail.arrival == 1 && sail.portarrival == 5)
         {
             if (initiate == true)
             {
@@ -34,18 +34,19 @@ public class port : MonoBehaviour
             if (timer < 0)
             {
                 GameObject.Find("remember").GetComponent<remember>().position = GameObject.Find("ship1").transform.position;
-                SceneManager.LoadScene("Japan");
-                port.firstarrival = 0;
-            }
-            
-        }
 
-                    
-           
+
+                SceneManager.LoadScene("Alexandria");
+                port5.firstarrivalalex = 0;
+
+            }
+
+        }
     }
 
 
 }
+
 
 
 

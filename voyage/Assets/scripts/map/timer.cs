@@ -22,72 +22,18 @@ public class timer : MonoBehaviour
     void Update()
     {
         count = count + 1;
-        if (count == 1600)
+        if (count == 600 && countmonth != 12)
         {
-            countday = countday + 1;
+            countmonth = countmonth + 1;
             count = 0;
         }
-        if (countday == 31 && countmonth == 1)
+        if (count == 600 && countmonth == 12)
         {
-            countday = 1;
-            countmonth = 2;
-        }
-        if (countday == 28 && countmonth == 2)
-        {
-            countday = 1;
-            countmonth = 3;
-        }
-        if (countday == 31 && countmonth == 3)
-        {
-            countday = 1;
-            countmonth = 4;
-        }
-        if (countday == 30 && countmonth == 4)
-        {
-            countday = 1;
-            countmonth = 5;
-        }
-        if (countday == 31 && countmonth == 5)
-        {
-            countday = 1;
-            countmonth = 6;
-        }
-        if (countday == 30 && countmonth == 6)
-        {
-            countday = 1;
-            countmonth = 7;
-        }
-        if (countday == 31 && countmonth == 7)
-        {
-            countday = 1;
-            countmonth = 8;
-        }
-        if (countday == 31 && countmonth == 8)
-        {
-            countday = 1;
-            countmonth = 9;
-        }
-        if (countday == 30 && countmonth == 9)
-        {
-            countday = 1;
-            countmonth = 10;
-        }
-        if (countday == 31 && countmonth == 10)
-        {
-            countday = 1;
-            countmonth = 11;
-        }
-        if (countday == 30 && countmonth == 11)
-        {
-            countday = 1;
-            countmonth = 12;
-        }
-        if (countday == 31 && countmonth == 12)
-        {
-            countday = 1;
             countmonth = 1;
+            count = 0;
             countyear = countyear + 1;
         }
+        
         if (countyear == 1810)
         {
             Debug.Log("Finish!");

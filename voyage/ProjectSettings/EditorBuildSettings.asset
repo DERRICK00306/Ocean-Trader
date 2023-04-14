@@ -8,19 +8,103 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3833c972c5533e143a2e1b611d3e2e7b
-  - enabled: 1
-    path: Assets/Scenes/Map.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level2/Japan.unity
     guid: 53d5757cdd7c4cd4a8429f3a40175d8c
   - enabled: 1
     path: Assets/Scenes/Level3/Japan_Bar.unity
     guid: c2890d01cddce5846b030c6f300e52c8
-  - enabled: 1
-    path: Assets/Scenes/Level3/Japan_Exchange.unity
-    guid: c7048e7f20d6f034da172c61effbe889
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level3/Japan_Yard.unity
     guid: f505416f323f84e29aa3ceb50a0b2d2b
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 2ad2c563e008b4727839ae40f03edc4c
+  - enabled: 1
+    path: Assets/Scenes/Level3/Alexandria_Bar.unity
+    guid: c12e086a3b64d484f8fe3739ac8f4890
+  - enabled: 1
+    path: Assets/Scenes/Level3/Alexandria_Exchange.unity
+    guid: 64702e331c668ad45ac386d3b3c6f9c4
+  - enabled: 1
+    path: Assets/Scenes/Level3/Barcelona_Bar.unity
+    guid: 41150cdb7156849e4a6ae1a71ceed831
+  - enabled: 1
+    path: Assets/Scenes/Level3/Barcelona_Exchange.unity
+    guid: c3579d21b5ccc204f903dc85772ebc70
+  - enabled: 1
+    path: Assets/Scenes/Level3/Brenos_Aries_Bar.unity
+    guid: 612d91a2123884d298c7577db11d7f4a
+  - enabled: 1
+    path: Assets/Scenes/Level3/Brenos_Aries_Exchange.unity
+    guid: 81497e0ca32672a429cb143fd98ea6ae
+  - enabled: 1
+    path: Assets/Scenes/Level3/Casablanca_Bar.unity
+    guid: b96712b950a4847d180dcf1341baada1
+  - enabled: 1
+    path: Assets/Scenes/Level3/Casablanca_Exchange.unity
+    guid: e33ad6cbdfefdc6488cf3632be80c88a
+  - enabled: 1
+    path: Assets/Scenes/Level3/Good_Hope_Bar.unity
+    guid: 0e01f256e022048feb778f9efcbca951
+  - enabled: 1
+    path: Assets/Scenes/Level3/Good_Hope_Exchange.unity
+    guid: 5a8b06662cbb08346bd25743bc239d0f
+  - enabled: 1
+    path: Assets/Scenes/Level3/London_Exchange.unity
+    guid: 163c1c8ea86578042a7b3df3d95e04c9
+  - enabled: 1
+    path: Assets/Scenes/Level3/New_York_Exchange.unity
+    guid: a50c01177ef337f47ac41f301364f5ad
+  - enabled: 1
+    path: Assets/Scenes/Level3/San_Francisco_Exchange.unity
+    guid: e61d2da842a5398498509ab7705ef7e2
+  - enabled: 1
+    path: Assets/Scenes/Level3/Singapore_Exchange.unity
+    guid: 77d448437a4862646885188935457cd7
+  - enabled: 1
+    path: Assets/Scenes/Level3/Sydney_Exchange.unity
+    guid: 1a2ce417487b3474c9e8cd3457061b95
+  - enabled: 1
+    path: Assets/Scenes/Level3/London_Bar.unity
+    guid: e329b10df0353442f8fc38cce3a456ad
+  - enabled: 1
+    path: Assets/Scenes/Level3/Hamburg_Bar.unity
+    guid: e7ca6b80334fe4096b3bcd3259eaca5a
+  - enabled: 1
+    path: Assets/Scenes/Level3/Hamberg_Exchange.unity
+    guid: 22bd24545c4487c40a2819567e5efe03
+  - enabled: 1
+    path: Assets/Scenes/Level3/San_Francisco_Bar.unity
+    guid: d5e26c496978240eea7b23fac0b40c45
+  - enabled: 1
+    path: Assets/Scenes/Level3/Hong_Kong_Bar.unity
+    guid: 8c0992ea6543a4482b46ae3d56a07727
+  - enabled: 1
+    path: Assets/Scenes/Level3/Hong_Kong_Exchange.unity
+    guid: 8777b9dc95a31244da141993e4541a37
+  - enabled: 1
+    path: Assets/Scenes/Level3/New_York_Bar.unity
+    guid: c28145a1c285640709a42ab2ff7cb2d6
+  - enabled: 1
+    path: Assets/Scenes/Level3/Japan_Exchange.unity
+    guid: af252bbc182156c46ae6969423d221ee
+  - enabled: 1
+    path: Assets/Scenes/Level3/Vancouver_Bar.unity
+    guid: 6202bdc33140f4369a3a66e4cf9f801a
+  - enabled: 1
+    path: Assets/Scenes/Level3/Singapore_Bar.unity
+    guid: 741d4490a6ade43e286d4a27734ffa3e
+  - enabled: 1
+    path: Assets/Scenes/Level3/Sydney_Bar.unity
+    guid: f3fdfa5fc37034f2a903c71d593b5dc5
+  - enabled: 1
+    path: Assets/Scenes/Level3/Vancouver_Exchange.unity
+    guid: 0095ab5514359634a810d1aa045a9ffc
   m_configObjects: {}

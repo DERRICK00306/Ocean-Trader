@@ -4,26 +4,68 @@ using UnityEngine;
 
 public class Global : MonoBehaviour
 {
-    public static Dictionary<string, Dictionary<string, int>> price = 
+    public static Dictionary<string, Dictionary<string, int>> price =
         new Dictionary<string, Dictionary<string, int>>()
         {
-            {"Tokyo",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",7}, {"Kimono",15}, {"Jewery",40} } },
-            {"HK",   new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Tea",10}, {"Sausage",14} } },
-            {"Singapore",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Spice",5}, {"Jeans",12} } },
-            {"Sidney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",7}, {"Milk",10}, {"Chocolate",18} } },
+            {"Tokyo",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",7}, {"Bread",12}, {"Wood",8},{"Beef",14},
+                                                    {"Kimono",8}, {"Tea",7}, {"Jewery",33}, {"Spice",5},{"Milk",9},
+                                                    {"Wine",16}, {"Fur",19}, {"Chocolate",9}, {"Handcraft",10}
+                                                     } },
+            {"Hong_Kong",   new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+                                                    {"Kimono",8}, {"Tea",7}, {"Jewery",35}, {"Spice",4},{"Milk",8},
+                                                    {"Wine",16}, {"Fur",18}, {"Chocolate",9}, {"Handcraft",10}
+                                                     } },
+            {"Singapore",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",7}, {"Bread",13}, {"Wood",9},{"Beef",15},
+                                                    {"Kimono",9}, {"Tea",7}, {"Jewery",34}, {"Spice",5},{"Milk",8},
+                                                    {"Wine",17}, {"Fur",19}, {"Chocolate",10}, {"Handcraft",10}
+                                                     } },
+            {"Sidney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+                                                    {"Kimono",9}, {"Tea",7}, {"Jewery",33}, {"Spice",4},{"Milk",5},
+                                                    {"Wine",17}, {"Fur",18}, {"Chocolate",10}, {"Handcraft",11}
+                                                     } },
 
-            {"London",new Dictionary<string, int>(){ {"Corn",6}, {"Bread",7}, {"Hat",12}, {"Compass",26} } },
-            {"Hamburg",   new Dictionary<string, int>(){ {"Corn",6}, {"Bread",6}, {"Beer",8}, {"Handcraft",17} } },
-            {"Barcelona",new Dictionary<string, int>(){ {"Corn",6}, {"Bread",7}, {"Wine",13}, {"Fur",20} } },
+            {"London",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",7}, {"Bread",10}, {"Wood",9},{"Beef",11},
+                                                    {"Kimono",12}, {"Tea",8}, {"Jewery",36}, {"Spice",7},{"Milk",7},
+                                                    {"Wine",13}, {"Fur",27}, {"Chocolate",8}, {"Handcraft",14}
+                                                     } },
+            {"Hamburg",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",10}, {"Wood",8},{"Beef",11},
+                                                    {"Kimono",12}, {"Tea",8}, {"Jewery",35}, {"Spice",8},{"Milk",7},
+                                                    {"Wine",13}, {"Fur",28}, {"Chocolate",9}, {"Handcraft",15}
+                                                     } },
+            {"Barcelona",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",9}, {"Wood",8},{"Beef",10},
+                                                    {"Kimono",13}, {"Tea",9}, {"Jewery",34}, {"Spice",8},{"Milk",6},
+                                                    {"Wine",12}, {"Fur",27}, {"Chocolate",9}, {"Handcraft",15}
+                                                     } },
 
-            {"Casablanca",new Dictionary<string, int>(){ {"Corn",7}, {"Wood",9}, {"Fur",15}, {"Wine",16} } },
-            {"Alexandria",   new Dictionary<string, int>(){ {"Corn",7}, {"Wood",8}, {"Handcraft",13}, {"Beer",10} } },
-            {"GoodHope",new Dictionary<string, int>(){ {"Corn",7}, {"Wood",8}, {"Compass",20}, {"Hat",15} } },
+            {"Casablanca",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",12}, {"Wood",5},{"Beef",12},
+                                                    {"Kimono",10}, {"Tea",11}, {"Jewery",20}, {"Spice",5},{"Milk",6},
+                                                    {"Wine",18}, {"Fur",18}, {"Chocolate",7}, {"Handcraft",11}
+                                                     } },
+            {"Alexandria",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",11}, {"Bread",12}, {"Wood",5},{"Beef",13},
+                                                    {"Kimono",10}, {"Tea",12}, {"Jewery",21}, {"Spice",6},{"Milk",6},
+                                                    {"Wine",17}, {"Fur",18}, {"Chocolate",7}, {"Handcraft",11}
+                                                     } },
+            {"GoodHope",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",11}, {"Bread",13}, {"Wood",6},{"Beef",13},
+                                                    {"Kimono",11}, {"Tea",11}, {"Jewery",22}, {"Spice",5},{"Milk",5},
+                                                    {"Wine",18}, {"Fur",19}, {"Chocolate",8}, {"Handcraft",12}
+                                                     } },
 
-            {"NY",new Dictionary<string, int>(){ {"Corn",5}, {"Beef",11}, {"Chocolate",15}, {"Milk",13} } },
-            {"SF",   new Dictionary<string, int>(){ {"Corn",5}, {"Beef",12}, {"Jeans",9}, {"Spice",7} } },
-            {"Vencouver",new Dictionary<string, int>(){ {"Corn",5}, {"Beef",11}, {"Jewery",30}, {"Kimono",20} } },
-            {"BA",new Dictionary<string, int>(){ {"Corn",5}, {"Beef",12}, {"Sausage",10}, {"Tea",14} } },
+            {"New_York",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",6},{"Beef",9},
+                                                    {"Kimono",13}, {"Tea",10}, {"Jewery",25}, {"Spice",6},{"Milk",4},
+                                                    {"Wine",15}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
+                                                     } },
+            {"San_Francisco",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",10}, {"Bread",9}, {"Wood",7},{"Beef",9},
+                                                    {"Kimono",13}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
+                                                    {"Wine",14}, {"Fur",31}, {"Chocolate",8}, {"Handcraft",13}
+                                                     } },
+            {"Vencouver",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",11}, {"Bread",10}, {"Wood",7},{"Beef",9},
+                                                    {"Kimono",14}, {"Tea",9}, {"Jewery",26}, {"Spice",7},{"Milk",5},
+                                                    {"Wine",14}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
+                                                     } },
+            {"Brenos_Aries",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",10}, {"Bread",10}, {"Wood",7},{"Beef",9},
+                                                    {"Kimono",14}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
+                                                    {"Wine",14}, {"Fur",29}, {"Chocolate",7}, {"Handcraft",13}
+                                                     } },
         };
 
     public static int Money = 10000;
@@ -40,4 +82,6 @@ public class Global : MonoBehaviour
         {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
         {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
     };
+
+    public static int Carry = 0;
 }

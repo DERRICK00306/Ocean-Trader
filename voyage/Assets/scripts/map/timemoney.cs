@@ -17,6 +17,6 @@ public class timemoney : MonoBehaviour
     {
         int moneyoutput = Global.Money;
         int carryoutput = Global.Carry;
-        Text1.text = "Money: " + moneyoutput + " ;Carry: "+carryoutput + "/500";
+        Text1.text = "Money: " + moneyoutput + " ;Carry: "+carryoutput + "/100;Time: " + timer.countyear + "/" + timer.countmonth;
     }
 }

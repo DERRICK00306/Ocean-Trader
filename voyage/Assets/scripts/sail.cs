@@ -10,6 +10,7 @@ public class sail : MonoBehaviour
     int i = 0;
     public static int change = 0;
     public static int arrival = 0;
+    public static int portarrival = 0;
     // Start is called before the first frame update
 
     void Awake()
@@ -380,6 +381,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port1.firstarrivalsingapore = 1;
+                sail.arrival = 1;
+                sail.portarrival = 1;
             }
         }
 
@@ -406,6 +410,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port0.firstarrivalhong = 1;
+                sail.arrival = 1;
+                sail.portarrival = 0;
             }
         }
 
@@ -439,8 +446,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
-                port.firstarrival = 1;
+                port2.firstarrivaltokyo = 1;
                 sail.arrival = 1;
+                sail.portarrival = 2;
             }
         }
 
@@ -474,6 +482,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port0.firstarrivalhong = 1;
+                sail.arrival = 1;
+                sail.portarrival = 0;
             }
         }
 
@@ -517,6 +528,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port3.firstarrivalsydney = 1;
+                sail.arrival = 1;
+                sail.portarrival = 3;
             }
         }
 
@@ -560,6 +574,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port0.firstarrivalhong = 1;
+                sail.arrival = 1;
+                sail.portarrival = 0;
             }
         }
 
@@ -595,6 +612,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port2.firstarrivaltokyo = 1;
+                sail.arrival = 1;
+                sail.portarrival = 2;
             }
         }
 
@@ -632,6 +652,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port1.firstarrivalsingapore = 1;
+                sail.arrival = 1;
+                sail.portarrival = 1;
             }
         }
 
@@ -675,6 +698,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port3.firstarrivalsydney = 1;
+                sail.arrival = 1;
+                sail.portarrival = 3;
             }
         }
 
@@ -719,6 +745,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port1.firstarrivalsingapore = 1;
+                sail.arrival = 1;
+                sail.portarrival = 1;
             }
         }
 
@@ -757,6 +786,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port3.firstarrivalsydney = 1;
+                sail.arrival = 1;
+                sail.portarrival = 3;
             }
         }
 
@@ -794,6 +826,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port2.firstarrivaltokyo = 1;
+                sail.arrival = 1;
+                sail.portarrival = 2;
             }
         }
 
@@ -840,6 +875,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port5.firstarrivalalex = 1;
+                sail.arrival = 1;
+                sail.portarrival = 5;
             }
         }
 
@@ -887,6 +925,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port4.firstarrivalgood = 1;
+                sail.arrival = 1;
+                sail.portarrival = 4;
             }
         }
 
@@ -913,6 +954,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port6.firstarrivalcasa = 1;
+                sail.arrival = 1;
+                sail.portarrival = 6;
             }
         }
 
@@ -938,6 +982,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port4.firstarrivalgood = 1;
+                sail.arrival = 1;
+                sail.portarrival = 4;
             }
         }
 
@@ -976,6 +1023,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port6.firstarrivalcasa = 1;
+                sail.arrival = 1;
+                sail.portarrival = 6;
             }
         }
 
@@ -1012,6 +1062,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port5.firstarrivalalex = 1;
+                sail.arrival = 1;
+                sail.portarrival = 5;
             }
         }
 
@@ -1038,6 +1091,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port8.firstarrivalham = 1;
+                sail.arrival = 1;
+                sail.portarrival = 8;
             }
         }
 
@@ -1063,6 +1119,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port7.firstarrivallondon = 1;
+                sail.arrival = 1;
+                sail.portarrival = 7;
             }
         }
 
@@ -1111,6 +1170,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port9.firstarrivalbar = 1;
+                sail.arrival = 1;
+                sail.portarrival = 9;
             }
         }
 
@@ -1159,6 +1221,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port7.firstarrivallondon = 1;
+                sail.arrival = 1;
+                sail.portarrival = 7;
             }
         }
 
@@ -1204,6 +1269,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port9.firstarrivalbar = 1;
+                sail.arrival = 1;
+                sail.portarrival = 9;
             }
         }
 
@@ -1250,6 +1318,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port8.firstarrivalham = 1;
+                sail.arrival = 1;
+                sail.portarrival = 8;
             }
         }
 
@@ -1296,6 +1367,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port11.firstarrivalven = 1;
+                sail.arrival = 1;
+                sail.portarrival = 11;
             }
         }
 
@@ -1342,6 +1416,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port10.firstarrivalnew = 1;
+                sail.arrival = 1;
+                sail.portarrival = 10;
             }
         }
 
@@ -1386,6 +1463,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port12.firstarrivalsan = 1;
+                sail.arrival = 1;
+                sail.portarrival = 12;
             }
         }
 
@@ -1433,6 +1513,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port10.firstarrivalnew = 1;
+                sail.arrival = 1;
+                sail.portarrival = 10;
             }
         }
 
@@ -1458,6 +1541,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port13.firstarrivalbre = 1;
+                sail.arrival = 1;
+                sail.portarrival = 13;
             }
         }
 
@@ -1484,6 +1570,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port10.firstarrivalnew = 1;
+                sail.arrival = 1;
+                sail.portarrival = 10;
             }
         }
 
@@ -1511,6 +1600,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port12.firstarrivalsan = 1;
+                sail.arrival = 1;
+                sail.portarrival = 12;
             }
         }
 
@@ -1538,6 +1630,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port11.firstarrivalven = 1;
+                sail.arrival = 1;
+                sail.portarrival = 11;
             }
         }
 
@@ -1593,6 +1688,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port13.firstarrivalbre = 1;
+                sail.arrival = 1;
+                sail.portarrival = 13;
             }
         }
 
@@ -1651,6 +1749,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port11.firstarrivalven = 1;
+                sail.arrival = 1;
+                sail.portarrival = 11;
             }
         }
 
@@ -1710,6 +1811,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port13.firstarrivalbre = 1;
+                sail.arrival = 1;
+                sail.portarrival = 13;
             }
         }
 
@@ -1766,6 +1870,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port12.firstarrivalsan = 1;
+                sail.arrival = 1;
+                sail.portarrival = 12;
             }
         }
 
@@ -1810,6 +1917,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port4.firstarrivalgood = 1;
+                sail.arrival = 1;
+                sail.portarrival = 4;
             }
         }
 
@@ -1854,6 +1964,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port1.firstarrivalsingapore = 1;
+                sail.arrival = 1;
+                sail.portarrival = 1;
             }
         }
 
@@ -1907,6 +2020,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port5.firstarrivalalex = 1;
+                sail.arrival = 1;
+                sail.portarrival = 5;
             }
         }
 
@@ -1959,6 +2075,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port1.firstarrivalsingapore = 1;
+                sail.arrival = 1;
+                sail.portarrival = 1;
             }
         }
 
@@ -1971,16 +2090,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[49].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.05f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.009f);
             }
             if (transform.position == routes[49].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.005f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.009f);
             }
             if (i == 1 && transform.position != routes[50].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.005f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[50].transform.position, 0.009f);
             }
             if (transform.position == routes[50].transform.position)
             {
@@ -1990,16 +2109,19 @@ public class sail : MonoBehaviour
             if (i==2 && transform.position == routes[51].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.005f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.009f);
             }
             if (i == 3 && transform.position != ports[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.005f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.009f);
             }
             if (transform.position == ports[12].transform.position)
             {
                 i = 0;
                 route = "";
+                port12.firstarrivalsan = 1;
+                sail.arrival = 1;
+                sail.portarrival = 12;
             }
         }
 
@@ -2037,6 +2159,9 @@ public class sail : MonoBehaviour
             {
                 i = 0;
                 route = "";
+                port0.firstarrivalhong = 1;
+                sail.arrival = 1;
+                sail.portarrival = 0;
             }
         }
 
@@ -2063,6 +2188,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port9.firstarrivalbar = 1;
+                sail.arrival = 1;
+                sail.portarrival = 9;
             }
         }
 
@@ -2089,6 +2217,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port6.firstarrivalcasa = 1;
+                sail.arrival = 1;
+                sail.portarrival = 6;
             }
         }
 
@@ -2115,6 +2246,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port9.firstarrivalbar = 1;
+                sail.arrival = 1;
+                sail.portarrival = 9;
             }
         }
 
@@ -2139,6 +2273,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port5.firstarrivalalex = 1;
+                sail.arrival = 1;
+                sail.portarrival = 5;
             }
         }
 
@@ -2165,6 +2302,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port13.firstarrivalbre = 1;
+                sail.arrival = 1;
+                sail.portarrival = 13;
             }
         }
 
@@ -2191,6 +2331,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port4.firstarrivalgood = 1;
+                sail.arrival = 1;
+                sail.portarrival = 4;
             }
         }
 
@@ -2216,6 +2359,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port10.firstarrivalnew = 1;
+                sail.arrival = 1;
+                sail.portarrival = 10;
             }
         }
 
@@ -2241,6 +2387,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port6.firstarrivalcasa = 1;
+                sail.arrival = 1;
+                sail.portarrival = 6;
             }
         }
 
@@ -2266,6 +2415,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port10.firstarrivalnew = 1;
+                sail.arrival = 1;
+                sail.portarrival = 10;
             }
         }
 
@@ -2290,6 +2442,9 @@ public class sail : MonoBehaviour
             {
                 route = "";
                 i = 0;
+                port7.firstarrivallondon = 1;
+                sail.arrival = 1;
+                sail.portarrival = 7;
             }
         }
 

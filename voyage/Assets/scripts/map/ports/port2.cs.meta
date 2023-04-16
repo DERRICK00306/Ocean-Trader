@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c70b7febbbca347539c7f988b77fc1f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cloud1: {fileID: 1393199553942880212, guid: 73f02a8b907976649840a461d8bbdcfb, type: 3}
+  - cloud2: {fileID: 1961631366139048466, guid: ceecc48fa79f31c46abc9c57ea59edde, type: 3}
+  - audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,7 @@ public class tokyorouteoutput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (port.firstarrival == 0 && sail.arrival == 1)
+        if (port2.firstarrivaltokyo == 0 && sail.arrival == 1 && sail.portarrival == 2)
         {
             GameObject.Find("tokyo").SetActive(true);
         }

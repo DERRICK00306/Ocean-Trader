@@ -2048,7 +2048,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8342422172290619812, guid: 41ffbfe3ec200f74ab104acce05bdc14, type: 3}
       propertyPath: Scene_Name
-      value: Map
+      value: Story
       objectReference: {fileID: 0}
     - target: {fileID: 8342422172290619813, guid: 41ffbfe3ec200f74ab104acce05bdc14, type: 3}
       propertyPath: m_Name

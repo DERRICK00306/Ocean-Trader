@@ -8,18 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level0/Menu.unity
     guid: 3833c972c5533e143a2e1b611d3e2e7b
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level2/Japan.unity
     guid: 53d5757cdd7c4cd4a8429f3a40175d8c
   - enabled: 1
     path: Assets/Scenes/Level3/Bars/Japan_Bar.unity
     guid: c2890d01cddce5846b030c6f300e52c8
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level2/Alexandria.unity
     guid: 9057486e232b94d4d956549ce5e06a7f
@@ -59,9 +53,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2/Vancouver.unity
     guid: f6c4081d351068745b45f88bb565f6fe
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Japan_Yard.unity
-    guid: f505416f323f84e29aa3ceb50a0b2d2b
   - enabled: 1
     path: Assets/Scenes/Level1/Map.unity
     guid: 2ad2c563e008b4727839ae40f03edc4c
@@ -149,4 +140,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Exchanges/Vancouver_Exchange.unity
     guid: 0095ab5514359634a810d1aa045a9ffc
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Alexandria_Shipyard.unity
+    guid: f99f26adbca4f4ef68e95b84015f5246
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Hong_Kong_Shipyard.unity
+    guid: fe5633f98609e4df99160e3b7691a10e
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Japan_Shipyard.unity
+    guid: 6523817cd0e93ef47ba09c877a017236
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/London_Shipyard.unity
+    guid: 0902b79e5e331478389a26e40d787b3c
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/New_York_Shipyard.unity
+    guid: d379cebd790f549849cb5a7b9a2da121
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/San_Francisco_Shipyard.unity
+    guid: ed4fa7936d6904c488063f0fc495fb08
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Singapore_Shipyard.unity
+    guid: 16a1a6670800b4a08897583a6ff8e9b0
   m_configObjects: {}

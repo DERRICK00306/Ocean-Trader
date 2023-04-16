@@ -7,10 +7,10 @@ using static Unity.VisualScripting.Member;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    /*
+    
     public Dialogue dialogue;
-    public Dialogue information;
-    */
+    //public Dialogue information;
+    
     private string[] sentencesChat = {
         "Good evening, do you have a reservation?",
         "Hi there, are you dining in or taking out?",
@@ -47,10 +47,10 @@ public class DialogueTrigger : MonoBehaviour
         "My goods are the best!"
     };
 
-    /*public void TriggerDialogue()
+    public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    }*/
+    }
 
     /*public void TriggerInformation()
     {

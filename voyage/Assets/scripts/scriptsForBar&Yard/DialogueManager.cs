@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    /*public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue)
     {
 
         //Debug.Log("Starting conversation with " + dialogue.name);
@@ -41,7 +41,7 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
 
-    }*/
+    }
 
     public void MoneyInsuffient()
     {
@@ -80,7 +80,7 @@ public class DialogueManager : MonoBehaviour
         prevIndex = index; // update previous index
     }
 
-    /*public void DisplayNextSentence()
+    public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
         //Debug.Log(sentence); 
-    }*/
+    }
 
     public void EndDialogue()
     {

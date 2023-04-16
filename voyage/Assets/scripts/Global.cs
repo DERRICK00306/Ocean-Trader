@@ -68,7 +68,16 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
-    public static int Money = 10000;
+    public static int Money;
+
+    public static int Luck;
+
+    public static int Discount;
+
+    public static int Speed;
+
+    public static int Carry;
+
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
         {"Corn",0},{"Fish",0},{"Bread",0},{"Beef",0},{"Wood",0},
@@ -83,5 +92,5 @@ public class Global : MonoBehaviour
         {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
     };
 
-    public static int Carry = 0;
+    
 }

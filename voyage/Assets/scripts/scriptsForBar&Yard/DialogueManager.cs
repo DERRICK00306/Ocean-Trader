@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void MoneyInsuffient()
+    public void MoneyInsufficient()
     {
         dialogueText.text = "It seems that you don't have enough money my friend.";
     }

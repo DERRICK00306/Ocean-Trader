@@ -435,6 +435,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1320161227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320161229}
+  - component: {fileID: 1320161228}
+  m_Layer: 0
+  m_Name: ChinaTown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1320161228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320161227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f25187b415072047aa526b0f22368db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBuilt: {fileID: 1093734611860499237, guid: 76828ec45a701eb43b723471cf317a92, type: 3}
+  NotBuilt: {fileID: 370751147348921876, guid: c8451ad45eaa0034088b99ca63462a93, type: 3}
+  city_name: Hamburg
+  warning: {fileID: 4413990560602225150, guid: 59fa0e0e289c81746acd234af924a68d, type: 3}
+--- !u!4 &1320161229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320161227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.67742825, y: -0.1208572, z: -10.027572}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1507811561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,7 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1266,7 +1314,7 @@ RectTransform:
   m_GameObject: {fileID: 7471311853169988784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.88, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.58, y: 1.71, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7471311853221366968}
@@ -1275,7 +1323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 772.9, y: 330.5}
+  m_AnchoredPosition: {x: -325.58, y: -34.24}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7471311853169988796
@@ -1606,7 +1654,7 @@ RectTransform:
   m_GameObject: {fileID: 7471311853656208069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.42, y: 0.59, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7471311854286517181}
@@ -1615,7 +1663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -825.2, y: -87.1}
+  m_AnchoredPosition: {x: 331.12, y: 99.7}
   m_SizeDelta: {x: 260.3, y: 82.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7471311853656208067
@@ -1662,7 +1710,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1320161228}
         m_TargetAssemblyTypeName: ChinaTown, Assembly-CSharp
         m_MethodName: Display
         m_Mode: 1
@@ -1837,7 +1885,7 @@ RectTransform:
   m_GameObject: {fileID: 9091540334266848517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.45, y: 2.93, z: 1}
+  m_LocalScale: {x: 0.65, y: 2.03, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3228758406291228669}
@@ -1846,7 +1894,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 769.24, y: -470}
+  m_AnchoredPosition: {x: 325.7, y: -178.33}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8744963536404028103
@@ -1858,7 +1906,7 @@ RectTransform:
   m_GameObject: {fileID: 184017810182630075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.61, y: 2.5, z: 1}
+  m_LocalScale: {x: 0.6, y: 1.78, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3751043583465831693}
@@ -1867,7 +1915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 163, y: 168.6}
+  m_AnchoredPosition: {x: 73.3, y: 42.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9091540334266848517

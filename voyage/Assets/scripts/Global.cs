@@ -68,15 +68,15 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
-    public static int Money = 0;
+    public static int Money;
 
-    public static int Luck = 0;
+    public static int Luck;
 
-    public static int discount = 0;
+    public static int Discount;
 
-    public static int Speed = 0;
+    public static int Speed;
 
-    public static int Carry = 0;
+    public static int Carry;
 
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {

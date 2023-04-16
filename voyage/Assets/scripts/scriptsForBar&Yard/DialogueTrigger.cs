@@ -1,13 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Net.Sockets;
+using System.Numerics;
+using Unity.Mathematics;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
+using UnityEditor;
 using UnityEngine;
 using static Unity.VisualScripting.Member;
+using static UnityEditor.FilePathAttribute;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    
+
+
+    private string[] UsefulInfo =
+    {
+        "Americans and Africans pay a premium for their FISH compared to other regions.",
+        "BREAD prices in Europe and Asia tend to be higher than elsewhere in the world.",
+        "The cost of WOOD is notably lower in Africa and America compared to other places.",
+        "American BEEF can be quite cheap compared to BEEF in other parts of the globe.",
+        "KIMONO is generally more cheaper in Asia than in other regions.",
+        "You may notice that TEA is significantly more expensive in America and Africa than in other areas.",
+        "The price of JEWERY is notably inflated in Europe and Asia when compared to other locations.",
+        "Europeans and Americans have to pay a premium for their SPICE when compared to other regions.",
+        "The cost of MILK in America is often much lower than in other parts of the world.",
+        "European consumers typically have to shell out less for their WINES than those in other areas.",
+        "FUR prices in Europe and America can be quite exorbitant compared to other parts of the globe.",
+        "It's no secret that CHOCOLATE is often more costly in Asia than in other regions.",
+        "The price of HANDCRAFT in Asia tends to be lower than in other places around the world.",
+    };
+
+
+
+
     public Dialogue dialogue;
     //public Dialogue information;
     
@@ -71,7 +99,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<DialogueManager>().MoneyInsuffient();
+            FindObjectOfType<DialogueManager>().MoneyInsufficient();
         }
         
     }

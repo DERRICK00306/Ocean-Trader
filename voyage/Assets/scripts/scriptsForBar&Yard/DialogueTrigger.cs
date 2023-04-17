@@ -10,7 +10,7 @@ using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEditor;
 using UnityEngine;
 using static Unity.VisualScripting.Member;
-using static UnityEditor.FilePathAttribute;
+//using static UnityEditor.FilePathAttribute;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -80,11 +80,7 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
-    /*public void TriggerInformation()
-    {
-        FindObjectOfType<DialogueManager>().StartDialogue(information);
-    }*/
-
+    
     public void TriggerDialogueRandom()
     {
         FindObjectOfType<DialogueManager>().StartRandomDialogue(sentencesChat);
@@ -95,7 +91,9 @@ public class DialogueTrigger : MonoBehaviour
         if (Global.Money >= 10)
         {
             Global.Money -= 10;
+
             FindObjectOfType<DialogueManager>().StartRandomDialogue(sentencesInformation);
+            FindObjectOfType<DialogueManager>().StartRandomDialogue(UsefulInfo);
         }
         else
         {

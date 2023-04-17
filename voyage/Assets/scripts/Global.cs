@@ -90,7 +90,7 @@ public class Global : MonoBehaviour
 
     public static Dictionary<string, bool> ChinaTown = new Dictionary<string, bool> {
         {"Hong_Kong",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
-        {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
+        {"Hamburg",false},{"Barcelona",false},{"Good_Hope",false},{"Alexandria",false},{"Casablanca",false},
         {"New_York",false},{"San_Francisco",false},{"Vencouver",false},{"Brenos_Ariesss",false}
     };
 

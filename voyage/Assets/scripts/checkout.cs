@@ -11,7 +11,7 @@ public class checkout : MonoBehaviour
     void Start()
     {
         wealth.text = Global.Money.ToString();
-        int china = 4;
+        int china = 0;
         foreach(var city in Global.ChinaTown)
         {
             if (city.Value == true) {

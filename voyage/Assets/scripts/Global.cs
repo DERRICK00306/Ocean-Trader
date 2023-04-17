@@ -78,6 +78,8 @@ public class Global : MonoBehaviour
 
     public static int Carry;
 
+    public static int MaxLoad;
+
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
         {"Corn",0},{"Fish",0},{"Bread",0},{"Beef",0},{"Wood",0},
@@ -87,9 +89,9 @@ public class Global : MonoBehaviour
     };
 
     public static Dictionary<string, bool> ChinaTown = new Dictionary<string, bool> {
-        {"HK",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
+        {"Hong_Kong",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
         {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
-        {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
+        {"New_York",false},{"San_Francisco",false},{"Vencouver",false},{"Brenos_Ariesss",false}
     };
 
     

@@ -129,7 +129,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3/Bars/Hamburg_Bar.unity
     guid: e7ca6b80334fe4096b3bcd3259eaca5a
   - enabled: 1
-    path: Assets/Scenes/Level3/Exchanges/Hamberg_Exchange.unity
+    path: Assets/Scenes/Level3/Exchanges/Hamburg_Exchange.unity
     guid: 22bd24545c4487c40a2819567e5efe03
   - enabled: 1
     path: Assets/Scenes/Level3/Bars/San_Francisco_Bar.unity

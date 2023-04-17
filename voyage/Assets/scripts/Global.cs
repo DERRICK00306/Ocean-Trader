@@ -19,7 +19,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",9}, {"Tea",7}, {"Jewery",34}, {"Spice",5},{"Milk",8},
                                                     {"Wine",17}, {"Fur",19}, {"Chocolate",10}, {"Handcraft",10}
                                                      } },
-            {"Sidney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+            {"Sydney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
                                                     {"Kimono",9}, {"Tea",7}, {"Jewery",33}, {"Spice",4},{"Milk",5},
                                                     {"Wine",17}, {"Fur",18}, {"Chocolate",10}, {"Handcraft",11}
                                                      } },
@@ -45,7 +45,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",10}, {"Tea",12}, {"Jewery",21}, {"Spice",6},{"Milk",6},
                                                     {"Wine",17}, {"Fur",18}, {"Chocolate",7}, {"Handcraft",11}
                                                      } },
-            {"GoodHope",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",11}, {"Bread",13}, {"Wood",6},{"Beef",13},
+            {"Good_Hope",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",11}, {"Bread",13}, {"Wood",6},{"Beef",13},
                                                     {"Kimono",11}, {"Tea",11}, {"Jewery",22}, {"Spice",5},{"Milk",5},
                                                     {"Wine",18}, {"Fur",19}, {"Chocolate",8}, {"Handcraft",12}
                                                      } },
@@ -58,7 +58,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",13}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
                                                     {"Wine",14}, {"Fur",31}, {"Chocolate",8}, {"Handcraft",13}
                                                      } },
-            {"Vencouver",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",11}, {"Bread",10}, {"Wood",7},{"Beef",9},
+            {"Vancouver",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",11}, {"Bread",10}, {"Wood",7},{"Beef",9},
                                                     {"Kimono",14}, {"Tea",9}, {"Jewery",26}, {"Spice",7},{"Milk",5},
                                                     {"Wine",14}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
                                                      } },
@@ -90,7 +90,7 @@ public class Global : MonoBehaviour
 
     public static Dictionary<string, bool> ChinaTown = new Dictionary<string, bool> {
         {"Hong_Kong",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
-        {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
+        {"Hamburg",false},{"Barcelona",false},{"Good_Hope",false},{"Alexandria",false},{"Casablanca",false},
         {"New_York",false},{"San_Francisco",false},{"Vencouver",false},{"Brenos_Ariesss",false}
     };
 

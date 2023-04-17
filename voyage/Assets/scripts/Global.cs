@@ -78,6 +78,8 @@ public class Global : MonoBehaviour
 
     public static int Carry;
 
+    public static int MaxLoad;
+
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
         {"Corn",0},{"Fish",0},{"Bread",0},{"Beef",0},{"Wood",0},

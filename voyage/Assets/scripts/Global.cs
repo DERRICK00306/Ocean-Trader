@@ -68,15 +68,17 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
-    public static int Money = 0;
+    public static int Money;
 
-    public static int Luck = 0;
+    public static int Luck;
 
-    public static int discount = 0;
+    public static int Discount;
 
-    public static int Speed = 0;
+    public static int Speed;
 
-    public static int Carry = 0;
+    public static int Carry;
+
+    public static int MaxLoad;
 
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
@@ -87,9 +89,9 @@ public class Global : MonoBehaviour
     };
 
     public static Dictionary<string, bool> ChinaTown = new Dictionary<string, bool> {
-        {"HK",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
+        {"Hong_Kong",false},{"Singapore",false},{"Tokyo",false},{"Sidney",false},{"London",false},
         {"Hamburg",false},{"Barcelona",false},{"GoodHope",false},{"Alexandria",false},{"Casablanca",false},
-        {"NY",false},{"SF",false},{"Vencouver",false},{"BA",false}
+        {"New_York",false},{"San_Francisco",false},{"Vencouver",false},{"Brenos_Ariesss",false}
     };
 
     

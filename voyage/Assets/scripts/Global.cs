@@ -76,6 +76,8 @@ public class Global : MonoBehaviour
 
     public static string PreviousScene;
 
+    //public static int Cost;
+
     public static string[] attributes =
         {
             "",
@@ -84,26 +86,6 @@ public class Global : MonoBehaviour
             "Luck",
             "Strength"
         };
-
-
-    private static Ship ship0;
-    private static Ship ship1;
-    private static Ship ship2;
-    private static Ship ship3;
-    private static Ship ship4;
-    private static Ship ship5;
-    private static Ship ship6;
-
-    public static Ship[] ship =
-    {
-        ship0,
-        ship1,
-        ship2,
-        ship3,
-        ship4,
-        ship5,
-        ship6
-    };
 
 
     public static string[] ships =
@@ -128,7 +110,29 @@ public class Global : MonoBehaviour
         {"Ship7", false},
     };
 
-    public static Dictionary<string, int> ShipSelect = new Dictionary<string, int>()
+    public static Dictionary<string, int> ShipLoad = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> ShipCost = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> ShipSpeed = new Dictionary<string, int>()
     {
         {"Ship1", 100},
         {"Ship2", 200},

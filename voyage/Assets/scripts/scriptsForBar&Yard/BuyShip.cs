@@ -29,11 +29,10 @@ public class BuyShip : MonoBehaviour
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect3();
 
             Global.Money -= button.GetComponent<ShipInfoTrigger>().ship.price;
-
             Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
-
-            Global.MaxLoad = Global.ShipSelect[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
-
+            Global.MaxLoad = Global.ShipLoad[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
+            Global.GameAttribute["Speed"] = Global.ShipSpeed[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
+            Global.GameAttribute["Strength"] = Global.ShipCost[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
 
 
             button.GetComponent<ShipInfoTrigger>().ship.unlock = true;

@@ -13,20 +13,23 @@ public class CheckShip : MonoBehaviour
 
     public TextMeshProUGUI[] text;
 
+    public Button[] button;
 
-    // Start is called before the first frame update
-    void Start()
+
+    public void InitialiseStore()
     {
-        
+        int index = 0;
+        foreach (bool status in Global.ShipStatus.Values)
+        {
+            if (status == true)
+            {
+                button[index].GetComponent<ShipInfoTrigger>().ship.unlock = true;
+            }
+            index++;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void InitialiseBag()
+        public void InitialiseBag()
     {
         int index = 0;
         foreach (bool status in Global.ShipStatus.Values)

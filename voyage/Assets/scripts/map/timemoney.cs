@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class timemoney : MonoBehaviour
 {
@@ -17,6 +18,16 @@ public class timemoney : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        int carrySum = 0;
+        foreach (var value in Global.Package.Values)
+        {
+
+            carrySum += value;
+        }
+
+        Global.Carry = carrySum;
+
         int moneyoutput = Global.Money;
         int carryoutput = Global.Carry;
         Text1.text = "" + moneyoutput;

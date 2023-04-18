@@ -613,6 +613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658525424}
   - component: {fileID: 658525423}
+  - component: {fileID: 658525425}
   m_Layer: 0
   m_Name: Alexandra
   m_TagString: Untagged
@@ -687,6 +688,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658525425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658525422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb0e69617d9a4949be9ee2415ca9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previous: Alexandria
 --- !u!1 &740690504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,7 +2374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6058ca590dbc08440b30bab73b6eb243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene_Name: Alexandria_Shipyard
+  Scene_Name: Shipyard
   cloud1: {fileID: 1393199553942880212, guid: 73f02a8b907976649840a461d8bbdcfb, type: 3}
   cloud2: {fileID: 1961631366139048466, guid: ceecc48fa79f31c46abc9c57ea59edde, type: 3}
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}

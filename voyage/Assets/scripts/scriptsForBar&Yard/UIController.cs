@@ -7,6 +7,15 @@ public class UIController : MonoBehaviour
     public GameObject[] UISet;
     
 
+    public void SetFristUIAndUnsetOthers()
+    {
+        foreach (GameObject UI in UISet)
+        {
+            UI.SetActive(false);
+        }
+        UISet[0].SetActive(true);
+    }
+
     public void SetUI()
     {
         foreach (GameObject UI in UISet)

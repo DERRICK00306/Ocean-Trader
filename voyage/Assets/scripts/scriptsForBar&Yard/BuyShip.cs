@@ -30,6 +30,8 @@ public class BuyShip : MonoBehaviour
 
             Global.Money -= button.GetComponent<ShipInfoTrigger>().ship.price;
 
+            Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
+
             Global.MaxLoad = Global.ShipSelect[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
 
 

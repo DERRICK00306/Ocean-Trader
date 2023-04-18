@@ -43,7 +43,7 @@ public class sail : MonoBehaviour
             }
             if (transform.position == ports[3].transform.position)
             {
-                route = "1-3";
+                route = "3-1";
             }
             if (transform.position == ports[4].transform.position)
             {

@@ -72,7 +72,7 @@ public class Global : MonoBehaviour
 
     public static int Carry;
 
-    public static int MaxLoad;
+    public static int MaxLoad = 100;
 
     public static string PreviousScene;
 

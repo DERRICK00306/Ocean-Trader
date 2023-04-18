@@ -2308,11 +2308,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Red Dragon
-    itemID: 1
+    itemID: 5
     price: 80000
     unlock: 0
     speed: 1200
-    load: 5000
+    load: 1500
     cost: 1200
     description: "Red Dragon: \nSleek and swift ship, perfect for quick raids and
       surprise attacks."
@@ -2670,11 +2670,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Black Pearl
-    itemID: 1
+    itemID: 6
     price: 1000000
     unlock: 0
     speed: 3000
-    load: 10000
+    load: 3000
     cost: 3000
     description: "Black Pearl: \nLegendary ship sailed by the undead and cursed,
       nearly invincible in battle and feared by all who cross its path."
@@ -3574,11 +3574,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Night Ghost
-    itemID: 1
+    itemID: 3
     price: 30000
     unlock: 0
     speed: 500
-    load: 2000
+    load: 800
     cost: 500
     description: "Night Ghost: \nMysterious and ominous, crewed by ghostly figures
       who seek revenge on those who wronged them."
@@ -3859,11 +3859,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Fancy Ship
-    itemID: 1
+    itemID: 2
     price: 10000
     unlock: 0
     speed: 300
-    load: 2000
+    load: 500
     cost: 300
     description: "Fancy Ship: \nOpulent and luxurious, designed for transporting
       valuable cargo or impressing fellow sailors."
@@ -4497,11 +4497,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Sailing Boat
-    itemID: 1
+    itemID: 0
     price: 1000
     unlock: 0
     speed: 100
-    load: 500
+    load: 100
     cost: 100
     description: "Sailing Boat: \nSmall and nimble, perfect for shallow waters and
       quick piracy."
@@ -7548,11 +7548,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship:
     name: Crusade
-    itemID: 1
+    itemID: 4
     price: 50000
     unlock: 0
     speed: 800
-    load: 3000
+    load: 1000
     cost: 800
     description: "Crusade: \nMassive warship designed for battle, heavily armored
       and equipped with powerful cannons."
@@ -7989,7 +7989,7 @@ MonoBehaviour:
     price: 5000
     unlock: 0
     speed: 200
-    load: 1000
+    load: 200
     cost: 200
     description: "Sailing Ship: \nLarge and powerful, capable of traversing great
       distances and defending against threats."

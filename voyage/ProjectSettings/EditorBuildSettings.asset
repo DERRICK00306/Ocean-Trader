@@ -14,27 +14,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Bars/Japan_Bar.unity
     guid: c2890d01cddce5846b030c6f300e52c8
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/San_Francisco_Shipyard.unity
-    guid: ed4fa7936d6904c488063f0fc495fb08
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Singapore_Shipyard 1.unity
-    guid: 16a1a6670800b4a08897583a6ff8e9b0
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Alexandria_Shipyard.unity
-    guid: f99f26adbca4f4ef68e95b84015f5246
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level3/Shipyards/Hong_Kong_Shipyard.unity
-    guid: fe5633f98609e4df99160e3b7691a10e
+    guid: f99f26adbca4f4ef68e95b84015f5246
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Japan_Shipyard.unity
-    guid: 6523817cd0e93ef47ba09c877a017236
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/London_Shipyard.unity
-    guid: 0902b79e5e331478389a26e40d787b3c
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/New_York_Shipyard.unity
-    guid: d379cebd790f549849cb5a7b9a2da121
+    path: Assets/Scenes/Level3/Shipyards/Shipyard.unity
+    guid: 5f440891ae45f415a88a05aeb5eb60ff
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level2/Alexandria.unity
     guid: 9057486e232b94d4d956549ce5e06a7f

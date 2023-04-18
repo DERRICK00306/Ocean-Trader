@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameInitialisation : MonoBehaviour
+public class SetPreScene : MonoBehaviour
 {
+    public string previous;
+
     // Start is called before the first frame update
     void Start()
     {
-        Global.Money = 5000;
-        Global.Carry = 0;
-        Global.MaxLoad = 0;
+        Global.PreviousScene = previous;
     }
 
     // Update is called once per frame

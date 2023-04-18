@@ -11,7 +11,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",33}, {"Spice",5},{"Milk",9},
                                                     {"Wine",16}, {"Fur",19}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
-            {"Hong_Kong",   new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+            {"Hong_Kong",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",35}, {"Spice",4},{"Milk",8},
                                                     {"Wine",16}, {"Fur",18}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
@@ -68,18 +68,84 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
-    public static int Money;
-
-    public static int Luck;
-
-    public static int Discount;
-
-    public static int Speed;
+    public static int Money = 999999999;
 
     public static int Carry;
 
     public static int MaxLoad;
 
+    public static string PreviousScene;
+
+    public static string[] attributes =
+        {
+            "",
+            "Speed",
+            "Reputation",
+            "Luck",
+            "Strength"
+        };
+
+
+    private static Ship ship0;
+    private static Ship ship1;
+    private static Ship ship2;
+    private static Ship ship3;
+    private static Ship ship4;
+    private static Ship ship5;
+    private static Ship ship6;
+
+    public static Ship[] ship =
+    {
+        ship0,
+        ship1,
+        ship2,
+        ship3,
+        ship4,
+        ship5,
+        ship6
+    };
+
+
+    public static string[] ships =
+        {
+            "Ship1",
+            "Ship2",
+            "Ship3",
+            "Ship4",
+            "Ship5",
+            "Ship6",
+            "Ship7"
+        };
+
+    public static Dictionary<string, bool> ShipStatus = new Dictionary<string, bool>()
+    {
+        {"Ship1", false},
+        {"Ship2", false},
+        {"Ship3", false},
+        {"Ship4", false},
+        {"Ship5", false},
+        {"Ship6", false},
+        {"Ship7", false},
+    };
+
+    public static Dictionary<string, int> ShipSelect = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> GameAttribute = new Dictionary<string, int>()
+    {
+        {"Speed", 0},
+        {"Reputation", 0},
+        {"Luck", 0},
+        {"Strength", 0}
+    };
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
         {"Corn",0},{"Fish",0},{"Bread",0},{"Beef",0},{"Wood",0},

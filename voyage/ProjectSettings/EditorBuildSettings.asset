@@ -15,26 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3/Bars/Japan_Bar.unity
     guid: c2890d01cddce5846b030c6f300e52c8
   - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/San_Francisco_Shipyard.unity
-    guid: ed4fa7936d6904c488063f0fc495fb08
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Singapore_Shipyard 1.unity
-    guid: 16a1a6670800b4a08897583a6ff8e9b0
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Alexandria_Shipyard.unity
-    guid: f99f26adbca4f4ef68e95b84015f5246
-  - enabled: 1
     path: Assets/Scenes/Level3/Shipyards/Hong_Kong_Shipyard.unity
-    guid: fe5633f98609e4df99160e3b7691a10e
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/Japan_Shipyard.unity
-    guid: 6523817cd0e93ef47ba09c877a017236
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/London_Shipyard.unity
-    guid: 0902b79e5e331478389a26e40d787b3c
-  - enabled: 1
-    path: Assets/Scenes/Level3/Shipyards/New_York_Shipyard.unity
-    guid: d379cebd790f549849cb5a7b9a2da121
+    guid: f99f26adbca4f4ef68e95b84015f5246
   - enabled: 1
     path: Assets/Scenes/Level2/Alexandria.unity
     guid: 9057486e232b94d4d956549ce5e06a7f
@@ -47,6 +29,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1/Story.unity
     guid: 3fe35b46232294d439bee8f969388305
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Alexandria_Shipyard.unity
+    guid: bcce7ebdb5d1a4cafaa63d204e859703
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Japan_Shipyard.unity
+    guid: d5b771c6ef49a4460802e650353e5250
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/London_Shipyard.unity
+    guid: f4172fe5b74a2469bbf72986a6509038
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/New_York_Shipyard.unity
+    guid: 9074e4a8eca4b420cbf41e69057f8f3c
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/San_Francisco_Shipyard.unity
+    guid: cfa887e6b5eed4ec090435414b351daf
+  - enabled: 1
+    path: Assets/Scenes/Level3/Shipyards/Singapore_Shipyard.unity
+    guid: 5f295fde00bd540a8af979a91b019197
   - enabled: 1
     path: Assets/Scenes/Level2/Casablanca.unity
     guid: b397ba50bfebcd24bacf43adf809a49f

@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2145336757}
         m_TargetAssemblyTypeName: Scene2T3, Assembly-CSharp
         m_MethodName: change_scene
         m_Mode: 1

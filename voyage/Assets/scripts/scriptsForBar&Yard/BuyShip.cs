@@ -31,9 +31,9 @@ public class BuyShip : MonoBehaviour
             Global.Money -= button.GetComponent<ShipInfoTrigger>().ship.price;
             Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
             Global.MaxLoad = Global.ShipLoad[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
+            Global.Cost = button.GetComponent<ShipInfoTrigger>().ship.cost;
             Global.GameAttribute["Speed"] = Global.ShipSpeed[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
-            Global.GameAttribute["Strength"] = Global.ShipCost[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
-
+            
 
             button.GetComponent<ShipInfoTrigger>().ship.unlock = true;
             FindObjectOfType<ShipInfoManager>().StartShipDescription(button.GetComponent<ShipInfoTrigger>().ship);

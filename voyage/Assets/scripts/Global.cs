@@ -76,7 +76,7 @@ public class Global : MonoBehaviour
 
     public static string PreviousScene;
 
-    //public static int Cost;
+    public static int Cost;
 
     public static string[] attributes =
         {

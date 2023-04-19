@@ -15,6 +15,7 @@ public class Scene2T3 : MonoBehaviour
     {
         if (Global.MaxLoad > 0)
         {
+            Global.Money -= Global.Cost;
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
             Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
             Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);

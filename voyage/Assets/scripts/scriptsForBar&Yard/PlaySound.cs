@@ -8,6 +8,7 @@ public class PlaySound : MonoBehaviour
     public AudioSource soundPlayer2;
     public AudioSource soundPlayer3;
     public AudioSource soundPlayer4;
+    public AudioSource soundPlayer5;
 
     public void PlayThisSoundEffect1()
     {
@@ -27,5 +28,10 @@ public class PlaySound : MonoBehaviour
     public void PlayThisSoundEffect4()
     {
         soundPlayer4.Play();
+    }
+
+    public void PlayThisSoundEffect5()
+    {
+        soundPlayer5.Play();
     }
 }

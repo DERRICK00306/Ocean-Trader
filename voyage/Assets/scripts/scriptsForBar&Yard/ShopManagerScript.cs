@@ -91,6 +91,7 @@ public class ShopManagerScript : MonoBehaviour
         {
 
             Global.GameAttribute[Global.attributes[ButtonRef.GetComponent<ButtonInfo>().itemID]] += shopItems[4, ButtonRef.GetComponent<ButtonInfo>().itemID];
+            Global.counttime = 0;
 
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect3();
 

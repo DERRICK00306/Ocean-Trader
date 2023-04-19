@@ -11,7 +11,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",33}, {"Spice",5},{"Milk",9},
                                                     {"Wine",16}, {"Fur",19}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
-            {"Hong_Kong",   new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+            {"Hong_Kong",new Dictionary<string, int>(){ {"Corn",6}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
                                                     {"Kimono",8}, {"Tea",7}, {"Jewery",35}, {"Spice",4},{"Milk",8},
                                                     {"Wine",16}, {"Fur",18}, {"Chocolate",9}, {"Handcraft",10}
                                                      } },
@@ -19,7 +19,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",9}, {"Tea",7}, {"Jewery",34}, {"Spice",5},{"Milk",8},
                                                     {"Wine",17}, {"Fur",19}, {"Chocolate",10}, {"Handcraft",10}
                                                      } },
-            {"Sidney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
+            {"Sydney",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",8}, {"Bread",12}, {"Wood",8},{"Beef",14},
                                                     {"Kimono",9}, {"Tea",7}, {"Jewery",33}, {"Spice",4},{"Milk",5},
                                                     {"Wine",17}, {"Fur",18}, {"Chocolate",10}, {"Handcraft",11}
                                                      } },
@@ -45,7 +45,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",10}, {"Tea",12}, {"Jewery",21}, {"Spice",6},{"Milk",6},
                                                     {"Wine",17}, {"Fur",18}, {"Chocolate",7}, {"Handcraft",11}
                                                      } },
-            {"GoodHope",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",11}, {"Bread",13}, {"Wood",6},{"Beef",13},
+            {"Good_Hope",new Dictionary<string, int>(){ {"Corn",7}, {"Fish",11}, {"Bread",13}, {"Wood",6},{"Beef",13},
                                                     {"Kimono",11}, {"Tea",11}, {"Jewery",22}, {"Spice",5},{"Milk",5},
                                                     {"Wine",18}, {"Fur",19}, {"Chocolate",8}, {"Handcraft",12}
                                                      } },
@@ -58,7 +58,7 @@ public class Global : MonoBehaviour
                                                     {"Kimono",13}, {"Tea",10}, {"Jewery",27}, {"Spice",6},{"Milk",4},
                                                     {"Wine",14}, {"Fur",31}, {"Chocolate",8}, {"Handcraft",13}
                                                      } },
-            {"Vencouver",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",11}, {"Bread",10}, {"Wood",7},{"Beef",9},
+            {"Vancouver",new Dictionary<string, int>(){ {"Corn",5}, {"Fish",11}, {"Bread",10}, {"Wood",7},{"Beef",9},
                                                     {"Kimono",14}, {"Tea",9}, {"Jewery",26}, {"Spice",7},{"Milk",5},
                                                     {"Wine",14}, {"Fur",30}, {"Chocolate",7}, {"Handcraft",12}
                                                      } },
@@ -68,18 +68,92 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
-    public static int Money;
-
-    public static int Luck;
-
-    public static int Discount;
-
-    public static int Speed;
+    public static int Money = 9999999;
 
     public static int Carry;
 
-    public static int MaxLoad;
+    public static int MaxLoad = 0;
 
+    public static string PreviousScene;
+
+    public static int Cost;
+
+    public static int counttime = 0;
+
+    
+
+    public static string[] attributes =
+        {
+            "",
+            "Speed",
+            "Reputation",
+            "Luck",
+            "Strength"
+        };
+
+
+    public static string[] ships =
+        {
+            "Ship1",
+            "Ship2",
+            "Ship3",
+            "Ship4",
+            "Ship5",
+            "Ship6",
+            "Ship7"
+        };
+
+    public static Dictionary<string, bool> ShipStatus = new Dictionary<string, bool>()
+    {
+        {"Ship1", false},
+        {"Ship2", false},
+        {"Ship3", false},
+        {"Ship4", false},
+        {"Ship5", false},
+        {"Ship6", false},
+        {"Ship7", false},
+    };
+
+    public static Dictionary<string, int> ShipLoad = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> ShipCost = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> ShipSpeed = new Dictionary<string, int>()
+    {
+        {"Ship1", 100},
+        {"Ship2", 200},
+        {"Ship3", 500},
+        {"Ship4", 800},
+        {"Ship5", 1000},
+        {"Ship6", 1500},
+        {"Ship7", 3000},
+    };
+
+    public static Dictionary<string, int> GameAttribute = new Dictionary<string, int>()
+    {
+        {"Speed", 0},
+        {"Reputation", 0},
+        {"Luck", 0},
+        {"Strength", 0}
+    };
 
     public static Dictionary<string, int> Package = new Dictionary<string, int>() {
         {"Corn",0},{"Fish",0},{"Bread",0},{"Beef",0},{"Wood",0},

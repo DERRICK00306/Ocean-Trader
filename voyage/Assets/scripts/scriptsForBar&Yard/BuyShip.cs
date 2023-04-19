@@ -22,14 +22,19 @@ public class BuyShip : MonoBehaviour
 
     public void Buy()
     {
-        //GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        
+
         if (Global.Money >= button.GetComponent<ShipInfoTrigger>().ship.price && button.GetComponent<ShipInfoTrigger>().ship.unlock == false)
         {
 
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect3();
 
             Global.Money -= button.GetComponent<ShipInfoTrigger>().ship.price;
+            Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
+            Global.MaxLoad = Global.ShipLoad[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
+            Global.Cost = button.GetComponent<ShipInfoTrigger>().ship.cost;
+            Global.GameAttribute["Speed"] = Global.ShipSpeed[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]]; 
+            
+
             button.GetComponent<ShipInfoTrigger>().ship.unlock = true;
             FindObjectOfType<ShipInfoManager>().StartShipDescription(button.GetComponent<ShipInfoTrigger>().ship);
         }
@@ -39,6 +44,5 @@ public class BuyShip : MonoBehaviour
             // method if item is sold out.
         }
 
-        //ButtonRef.GetComponent<ButtonInfo>().quantityText.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().itemID].ToString();
     }
 }

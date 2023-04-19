@@ -4,11 +4,12 @@ using UnityEngine.EventSystems;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[4, 10];
+    public int[,] shopItems = new int[5, 10];
     //public string[] itemNames = new string[10];
 
     // Start is called before the first frame update
@@ -50,15 +51,26 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 9] = 0;
 
         // Quantities
-        shopItems[3, 1] = 20;
+        shopItems[3, 1] = 2;
         shopItems[3, 2] = 2;
-        shopItems[3, 3] = 3;
-        shopItems[3, 4] = 4;
+        shopItems[3, 3] = 10;
+        shopItems[3, 4] = 2;
         shopItems[3, 5] = 0;
         shopItems[3, 6] = 0;
         shopItems[3, 7] = 0;
         shopItems[3, 8] = 0;
         shopItems[3, 9] = 0;
+
+        // Effects
+        shopItems[4, 1] = 10;
+        shopItems[4, 2] = 10;
+        shopItems[4, 3] = 10;
+        shopItems[4, 4] = 10;
+        shopItems[4, 5] = 10;
+        shopItems[4, 6] = 10;
+        shopItems[4, 7] = 10;
+        shopItems[4, 8] = 10;
+        shopItems[4, 9] = 10;
 
 
     }
@@ -71,10 +83,15 @@ public class ShopManagerScript : MonoBehaviour
 
     public void Buy()
     {
+        
+
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
         if (Global.Money >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().itemID] && shopItems[3, ButtonRef.GetComponent<ButtonInfo>().itemID] > 0)
         {
+
+            Global.GameAttribute[Global.attributes[ButtonRef.GetComponent<ButtonInfo>().itemID]] += shopItems[4, ButtonRef.GetComponent<ButtonInfo>().itemID];
+            Global.counttime = 0;
 
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect3();
 

@@ -52,17 +52,9 @@ public class DialogueTrigger : MonoBehaviour
         "I have some useful information. Of course, not for free."
     };
 
-    private string[] sentencesInformation = {
-        "I can't tell you my biggest secret, but it's something that only a few people know.",
-        "Some secrets are best kept to oneself, especially if they could hurt others if revealed.",
-        "I promised to keep my friend's secret, even though it's been hard to keep it to myself.",
-        "Everyone has secrets, but it's up to them whether they want to share them or not.",
-        "It's important to trust someone enough to share your secrets with them, but make sure it's someone who won't betray that trust.",
-        "The best way to keep a secret is not to tell anyone, but sometimes you need to confide in someone you trust.",
-        "I have a secret talent that I don't often share with others, but it's something that brings me joy.",
-        "Sometimes secrets can be a burden, especially if you feel like you're carrying them alone.",
-        "Secrets can be dangerous, especially if they're used to manipulate or control someone else.",
-        "I discovered a secret about someone I know, but I'm not sure whether I should confront them or keep it to myself."
+    private string[] sentencesInformation =
+    {
+        "You are unlucky my friend, there's nothing useful that I can tell at this moment. Try again when you feel yourself lucky!"
     };
 
     private string[] sentencesStore =
@@ -92,8 +84,12 @@ public class DialogueTrigger : MonoBehaviour
         {
             Global.Money -= 10;
 
-            FindObjectOfType<DialogueManager>().StartRandomDialogue(sentencesInformation);
-            FindObjectOfType<DialogueManager>().StartRandomDialogue(UsefulInfo);
+            System.Random rand = new System.Random();
+
+            int index = rand.Next(1000);
+
+            if (Global.GameAttribute["Luck"] < index) FindObjectOfType<DialogueManager>().StartRandomDialogue(sentencesInformation);
+            else FindObjectOfType<DialogueManager>().StartRandomDialogue(UsefulInfo);
         }
         else
         {

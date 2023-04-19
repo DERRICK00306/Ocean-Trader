@@ -12,16 +12,18 @@ public class ShipInfoManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI loadText;
+    public TextMeshProUGUI costText;
     public TextMeshProUGUI statusText;
     public TextMeshProUGUI shipInfoText;
 
     public void StartShipDescription(Ship ship)
     {
-        priceText.text = "Price: " + ship.price.ToString() + "$";
+        priceText.text = "Price: " + ship.price.ToString() + " $";
         nameText.text = "Name: " + ship.name;
-        speedText.text = "Speed: " + ship.speed.ToString();
-        loadText.text = "Max Load: " + ship.load.ToString();
-        if (ship.unlock) statusText.text = "Status: Unlocked";
+        speedText.text = "Speed: " + ship.speed.ToString() + " Mile/h";
+        loadText.text = "Max Load: " + ship.load.ToString() + " Unit";
+        costText.text = "Maintenance: " + ship.cost.ToString() + " $";
+        if (ship.unlock) statusText.text = "Status: Acquired";
         else statusText.text = "Status: Locked";
         shipInfoText.text = ship.description;
     }

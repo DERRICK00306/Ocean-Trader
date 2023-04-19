@@ -9,8 +9,11 @@ public class sail : MonoBehaviour
     string route;
     int i = 0;
     public static int change = 0;
-    public static int arrival = 0;
+    public static int arrival = 1;
     public static int portarrival = 0;
+
+    float speed = 0;
+    int check = Global.GameAttribute["Speed"];
     // Start is called before the first frame update
 
     void Awake()
@@ -25,6 +28,115 @@ public class sail : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Global.counttime = Global.counttime + 1;
+        if (check == 0)
+        {
+            speed = 0.01f;
+        }
+
+        if (check == 100)
+        {
+            speed = 0.01f;
+        }
+        if (check == 110)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.01f;
+                Global.GameAttribute["Speed"] = 100;
+            }
+            speed = 0.015f;
+        }
+
+
+        if (check == 200)
+        {
+            speed = 0.015f;
+        }
+        if (check == 210)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.015f;
+                Global.GameAttribute["Speed"] = 200;
+            }
+            speed = 0.02f;
+        }
+
+
+        if (check == 500)
+        {
+            speed = 0.02f;
+        }
+        if (check == 510)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.02f;
+                Global.GameAttribute["Speed"] = 500;
+            }
+            speed = 0.03f;
+        }
+
+
+        if (check == 800)
+        {
+            speed = 0.03f;
+        }
+        if (check == 810)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.03f;
+                Global.GameAttribute["Speed"] = 800;
+            }
+            speed = 0.05f;
+        }
+
+
+        if (check == 1000)
+        {
+            speed = 0.05f;
+        }
+        if (check == 1010)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.05f;
+                Global.GameAttribute["Speed"] = 1000;
+            }
+            speed = 0.06f;
+        }
+
+
+        if (check == 1500)
+        {
+            speed = 0.06f;
+        }
+        if (check == 1510)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.06f;
+                Global.GameAttribute["Speed"] = 1500;
+            }
+            speed = 0.1f;
+        }
+
+
+        if (check == 3000)
+        {
+            speed = 0.1f;
+        }
+        if (check == 3010)
+        {
+            if (Global.counttime > 3600)
+            {
+                speed = 0.1f;
+                Global.GameAttribute["Speed"] = 3000;
+            }
+            speed = 0.11f;
+        }
         sail.change = 1;
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
@@ -43,7 +155,7 @@ public class sail : MonoBehaviour
             }
             if (transform.position == ports[3].transform.position)
             {
-                route = "1-3";
+                route = "3-1";
             }
             if (transform.position == ports[4].transform.position)
             {
@@ -366,16 +478,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[0].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, speed);
             }
             if (transform.position == routes[0].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (transform.position == ports[1].transform.position)
             {
@@ -395,16 +507,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[0].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, speed);
             }
             if (transform.position == routes[0].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[0].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (transform.position == ports[0].transform.position)
             {
@@ -422,25 +534,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, speed);
             }
             if (transform.position == routes[1].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[2].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, speed);
             }
             if (transform.position == routes[2].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[2].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (transform.position == ports[2].transform.position)
             {
@@ -458,25 +570,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[2].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, speed);
             }
             if (transform.position == routes[2].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, speed);
             }
             if (transform.position == routes[1].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[0].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (transform.position == ports[0].transform.position)
             {
@@ -495,34 +607,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[3].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, speed);
             }
             if (transform.position == routes[3].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, speed);
             }
             if (transform.position == routes[4].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, speed);
             }
             if (transform.position == routes[5].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[3].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (transform.position == ports[3].transform.position)
             {
@@ -541,34 +653,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, speed);
             }
             if (transform.position == routes[5].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[4].transform.position, speed);
             }
             if (transform.position == routes[4].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[3].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, speed);
             }
             if (transform.position == routes[3].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[0].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[0].transform.position, speed);
             }
             if (transform.position == ports[0].transform.position)
             {
@@ -588,25 +700,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, speed);
             }
             if (transform.position == routes[6].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[7].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, speed);
             }
             if (transform.position == routes[7].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[2].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (transform.position == ports[2].transform.position)
             {
@@ -628,25 +740,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[7].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, speed);
             }
             if (transform.position == routes[7].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, speed);
             }
             if (transform.position == routes[6].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (transform.position == ports[1].transform.position)
             {
@@ -665,34 +777,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[8].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, speed);
             }
             if (transform.position == routes[8].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, speed);
             }
             if (transform.position == routes[9].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, speed);
             }
             if (transform.position == routes[10].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[3].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (transform.position == ports[3].transform.position)
             {
@@ -712,34 +824,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, speed);
             }
             if (transform.position == routes[10].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[9].transform.position, speed);
             }
             if (transform.position == routes[9].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[8].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, speed);
             }
             if (transform.position == routes[8].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (transform.position == ports[1].transform.position)
             {
@@ -762,25 +874,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[11].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, speed);
             }
             if (transform.position == routes[11].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, speed);
             }
             if (transform.position == routes[12].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[3].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[3].transform.position, speed);
             }
             if (transform.position == ports[3].transform.position)
             {
@@ -802,25 +914,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, speed);
             }
             if (transform.position == routes[12].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[11].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, speed);
             }
             if (transform.position == routes[11].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[2].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[2].transform.position, speed);
             }
             if (transform.position == ports[2].transform.position)
             {
@@ -842,34 +954,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, speed);
             }
             if (transform.position == routes[13].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[14].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, speed);
             }
             if (transform.position == routes[14].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[15].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, speed);
             }
             if (transform.position == routes[15].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (transform.position == ports[5].transform.position)
             {
@@ -892,34 +1004,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[15].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, speed);
             }
             if (transform.position == routes[15].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[14].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[14].transform.position, speed);
             }
             if (transform.position == routes[14].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, speed);
             }
             if (transform.position == routes[13].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (transform.position == ports[4].transform.position)
             {
@@ -939,16 +1051,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[16].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, speed);
             }
             if (transform.position == routes[16].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (transform.position == ports[6].transform.position)
             {
@@ -967,16 +1079,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[16].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, speed);
             }
             if (transform.position == routes[16].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (transform.position == ports[4].transform.position)
             {
@@ -999,25 +1111,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[17].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, speed);
             }
             if (transform.position == routes[17].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[18].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, speed);
             }
             if (transform.position == routes[18].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (transform.position == ports[6].transform.position)
             {
@@ -1038,25 +1150,25 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[18].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, speed);
             }
             if (transform.position == routes[18].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[17].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, speed);
             }
             if (transform.position == routes[17].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (i == 2 && transform.position != ports[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (transform.position == ports[5].transform.position)
             {
@@ -1076,16 +1188,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[19].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, speed);
             }
             if (transform.position == routes[19].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[8].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, speed);
             }
             if (transform.position == ports[8].transform.position)
             {
@@ -1104,16 +1216,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[19].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, speed);
             }
             if (transform.position == routes[19].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[7].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (transform.position == ports[7].transform.position)
             {
@@ -1137,34 +1249,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[20].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, speed);
             }
             if (transform.position == routes[20].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[21].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, speed);
             }
             if (transform.position == routes[21].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[22].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, speed);
             }
             if (transform.position == routes[22].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (transform.position == ports[9].transform.position)
             {
@@ -1188,34 +1300,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[22].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, speed);
             }
             if (transform.position == routes[22].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[21].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[21].transform.position, speed);
             }
             if (transform.position == routes[21].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[20].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, speed);
             }
             if (transform.position == routes[20].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[7].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (transform.position == ports[7].transform.position)
             {
@@ -1236,34 +1348,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[23].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, speed);
             }
             if (transform.position == routes[23].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[24].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, speed);
             }
             if (transform.position == routes[24].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[25].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, speed);
             }
             if (transform.position == routes[25].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (transform.position == ports[9].transform.position)
             {
@@ -1285,34 +1397,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[25].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, speed);
             }
             if (transform.position == routes[25].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[24].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[24].transform.position, speed);
             }
             if (transform.position == routes[24].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[23].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, speed);
             }
             if (transform.position == routes[23].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[8].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[8].transform.position, speed);
             }
             if (transform.position == ports[8].transform.position)
             {
@@ -1334,34 +1446,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[26].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, speed);
             }
             if (transform.position == routes[26].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[27].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, speed);
             }
             if (transform.position == routes[27].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[28].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, speed);
             }
             if (transform.position == routes[28].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[11].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (transform.position == ports[11].transform.position)
             {
@@ -1383,34 +1495,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[28].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, speed);
             }
             if (transform.position == routes[28].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[27].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[27].transform.position, speed);
             }
             if (transform.position == routes[27].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[26].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, speed);
             }
             if (transform.position == routes[26].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (transform.position == ports[10].transform.position)
             {
@@ -1430,34 +1542,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[29].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, speed);
             }
             if (transform.position == routes[29].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[30].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, speed);
             }
             if (transform.position == routes[30].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[31].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, speed);
             }
             if (transform.position == routes[31].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (transform.position == ports[12].transform.position)
             {
@@ -1480,34 +1592,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[31].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, speed);
             }
             if (transform.position == routes[31].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[30].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[30].transform.position, speed);
             }
             if (transform.position == routes[30].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[29].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, speed);
             }
             if (transform.position == routes[29].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (transform.position == ports[10].transform.position)
             {
@@ -1526,16 +1638,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[32].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, speed);
             }
             if (transform.position == routes[32].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (transform.position == ports[13].transform.position)
             {
@@ -1555,16 +1667,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[32].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, speed);
             }
             if (transform.position == routes[32].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (transform.position == ports[10].transform.position)
             {
@@ -1585,16 +1697,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[33].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, speed);
             }
             if (transform.position == routes[33].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (transform.position == ports[12].transform.position)
             {
@@ -1615,16 +1727,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[33].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, speed);
             }
             if (transform.position == routes[33].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[11].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (transform.position == ports[11].transform.position)
             {
@@ -1646,43 +1758,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[34].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, speed);
             }
             if (transform.position == routes[34].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[35].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, speed);
             }
             if (transform.position == routes[35].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[36].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, speed);
             }
             if (transform.position == routes[36].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[37].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, speed);
             }
             if (transform.position == routes[37].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (transform.position == ports[13].transform.position)
             {
@@ -1707,43 +1819,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[37].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, speed);
             }
             if (transform.position == routes[37].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[36].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[36].transform.position, speed);
             }
             if (transform.position == routes[36].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[35].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[35].transform.position, speed);
             }
             if (transform.position == routes[35].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[34].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, speed);
             }
             if (transform.position == routes[34].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[11].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[11].transform.position, speed);
             }
             if (transform.position == ports[11].transform.position)
             {
@@ -1769,43 +1881,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[38].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, speed);
             }
             if (transform.position == routes[38].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[39].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, speed);
             }
             if (transform.position == routes[39].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[40].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, speed);
             }
             if (transform.position == routes[40].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[41].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, speed);
             }
             if (transform.position == routes[41].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (transform.position == ports[13].transform.position)
             {
@@ -1828,43 +1940,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[41].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, speed);
             }
             if (transform.position == routes[41].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[40].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[40].transform.position, speed);
             }
             if (transform.position == routes[40].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[39].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[39].transform.position, speed);
             }
             if (transform.position == routes[39].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[38].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, speed);
             }
             if (transform.position == routes[38].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[12].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[12].transform.position, speed);
             }
             if (transform.position == ports[12].transform.position)
             {
@@ -1884,34 +1996,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[42].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, speed);
             }
             if (transform.position == routes[42].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[43].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, speed);
             }
             if (transform.position == routes[43].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[44].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, speed);
             }
             if (transform.position == routes[44].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (transform.position == ports[4].transform.position)
             {
@@ -1931,34 +2043,34 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[44].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, speed);
             }
             if (transform.position == routes[44].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[43].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[43].transform.position, speed);
             }
             if (transform.position == routes[43].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[42].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, speed);
             }
             if (transform.position == routes[42].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (i == 3 && transform.position != ports[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (transform.position == ports[1].transform.position)
             {
@@ -1978,43 +2090,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[45].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, speed);
             }
             if (transform.position == routes[45].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[46].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, speed);
             }
             if (transform.position == routes[46].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[47].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, speed);
             }
             if (transform.position == routes[47].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[48].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, speed);
             }
             if (transform.position == routes[48].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (transform.position == ports[5].transform.position)
             {
@@ -2033,43 +2145,43 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[48].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, speed);
             }
             if (transform.position == routes[48].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, speed);
             }
             if (i == 1 && transform.position != routes[47].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[47].transform.position, speed);
             }
             if (transform.position == routes[47].transform.position)
             {
                 i = 2;
-                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, speed);
             }
             if (i == 2 && transform.position != routes[46].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[46].transform.position, speed);
             }
             if (transform.position == routes[46].transform.position)
             {
                 i = 3;
-                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, speed);
             }
             if (i == 3 && transform.position != routes[45].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, speed);
             }
             if (transform.position == routes[45].transform.position)
             {
                 i = 4;
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (i == 4 && transform.position != ports[1].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[1].transform.position, speed);
             }
             if (transform.position == ports[1].transform.position)
             {
@@ -2173,16 +2285,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[52].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, speed);
             }
             if (transform.position == routes[52].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (transform.position == ports[9].transform.position)
             {
@@ -2202,16 +2314,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[52].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, speed);
             }
             if (transform.position == routes[52].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (transform.position == ports[6].transform.position)
             {
@@ -2231,16 +2343,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[53].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, speed);
             }
             if (transform.position == routes[53].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[9].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[9].transform.position, speed);
             }
             if (transform.position == ports[9].transform.position)
             {
@@ -2258,16 +2370,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[53].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, speed);
             }
             if (transform.position == routes[53].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[5].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[5].transform.position, speed);
             }
             if (transform.position == ports[5].transform.position)
             {
@@ -2287,16 +2399,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[54].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, speed);
             }
             if (transform.position == routes[54].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[13].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[13].transform.position, speed);
             }
             if (transform.position == ports[13].transform.position)
             {
@@ -2316,16 +2428,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[54].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, speed);
             }
             if (transform.position == routes[54].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[4].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[4].transform.position, speed);
             }
             if (transform.position == ports[4].transform.position)
             {
@@ -2344,16 +2456,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[55].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, speed);
             }
             if (transform.position == routes[55].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (transform.position == ports[10].transform.position)
             {
@@ -2372,16 +2484,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[55].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, speed);
             }
             if (transform.position == routes[55].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[6].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[6].transform.position, speed);
             }
             if (transform.position == ports[6].transform.position)
             {
@@ -2400,16 +2512,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[56].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, speed);
             }
             if (transform.position == routes[56].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[10].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[10].transform.position, speed);
             }
             if (transform.position == ports[10].transform.position)
             {
@@ -2427,16 +2539,16 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[56].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, speed);
             }
             if (transform.position == routes[56].transform.position)
             {
                 i = 1;
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (i == 1 && transform.position != ports[7].transform.position)
             {
-                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, 0.01f);
+                transform.position = Vector3.MoveTowards(transform.position, ports[7].transform.position, speed);
             }
             if (transform.position == ports[7].transform.position)
             {

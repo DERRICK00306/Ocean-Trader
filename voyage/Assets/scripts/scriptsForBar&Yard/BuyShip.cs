@@ -32,7 +32,7 @@ public class BuyShip : MonoBehaviour
             Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
             Global.MaxLoad = Global.ShipLoad[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
             Global.Cost = button.GetComponent<ShipInfoTrigger>().ship.cost;
-            Global.GameAttribute["Speed"] = Global.ShipSpeed[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];
+            Global.GameAttribute["Speed"] = Global.ShipSpeed[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]]; 
             
 
             button.GetComponent<ShipInfoTrigger>().ship.unlock = true;

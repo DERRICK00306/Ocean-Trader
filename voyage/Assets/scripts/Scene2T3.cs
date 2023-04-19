@@ -10,12 +10,24 @@ public class Scene2T3 : MonoBehaviour
     public GameObject warning1;
     public GameObject warning2;
     public AudioSource audio_source;
+    
     // Start is called before the first frame update
 
 
     public void CheckChangeScene()
     {
-
+        int truecost = Global.Cost;
+        if (Global.GameAttribute["Strength"] == 10)
+        {
+            truecost = truecost - 50;
+            if (Global.counttime > 3600)
+            {
+                truecost = Global.Cost;
+                Global.GameAttribute["Strength"] = 0;
+            }
+        }
+        
+   
         int carrySum = 0;
         foreach (var value in Global.Package.Values)
         {
@@ -25,14 +37,14 @@ public class Scene2T3 : MonoBehaviour
 
         Global.Carry = carrySum;
 
-
+        
         if (Global.MaxLoad > 0)
         {
             
 
             if (Global.Carry <= Global.MaxLoad)
             {
-                Global.Money -= Global.Cost;
+                Global.Money -= truecost;
                 FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
                 Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
                 Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);

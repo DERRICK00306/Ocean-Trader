@@ -78,6 +78,10 @@ public class Global : MonoBehaviour
 
     public static int Cost;
 
+    public static int counttime = 0;
+
+    
+
     public static string[] attributes =
         {
             "",

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2/Japan.unity
     guid: 53d5757cdd7c4cd4a8429f3a40175d8c
   - enabled: 1
+    path: Assets/Scenes/Level0/Poster.unity
+    guid: b07fd06fb125a438397ba9e5b97f246d
+  - enabled: 1
     path: Assets/Scenes/Level3/Bars/Bar.unity
     guid: 95a7304e535b84e7c8d4be06832dbd83
   - enabled: 1

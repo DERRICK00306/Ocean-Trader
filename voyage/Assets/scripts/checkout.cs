@@ -33,7 +33,7 @@ public class checkout : MonoBehaviour
         experience.text = e.ToString();
         ships.text = Ships.ToString();
 
-        if (china > 3)
+        if (china > 4)
         {
             a.sprite = medal;
 

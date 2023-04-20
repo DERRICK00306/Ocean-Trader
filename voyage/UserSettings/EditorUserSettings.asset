@@ -6,34 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 54540151040d5d0d540f552040260944124f417b7c7b7f682e2a4a62b3e26c6e
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-      value: 5209075407515c0d0b565c2748215b44154f40792f2e24332b7d1e31b2b33768
-      flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 5107030300000f595e0a5b7414200844104e417a7d2d766075704963e6b46260
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5505075104040c035b5e5b7441755d444e154d782d7024342f2d4437b1b73661
-      flags: 0
-    RecentlyUsedSceneGuid-4:
       value: 02530d565d575b0b0e0d092345775d444f154e2c747f766879701b67b1b2663c
       flags: 0
-    RecentlyUsedSceneGuid-5:
+    RecentlyUsedSceneGuid-1:
       value: 50020054060c5a0b0b560a2342710b44134e4d72742c7f65797a4966b1b7663b
       flags: 0
-    RecentlyUsedSceneGuid-6:
+    RecentlyUsedSceneGuid-2:
       value: 5155000456040d08540b097346710d44464f402c7a2971337e7f4a64b1b6653b
       flags: 0
-    RecentlyUsedSceneGuid-7:
+    RecentlyUsedSceneGuid-3:
       value: 0102045450505f5f58080f7148740b4442161c792a7c72677b7c4a32b4e66568
       flags: 0
-    RecentlyUsedSceneGuid-8:
+    RecentlyUsedSceneGuid-4:
+      value: 5150505406005f08085e5c7a12770842414f4b732d2d72602b794e36e6e3603b
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 5a04555156055d5e585d592048775a47154f1c7e2e2d7666757a4f37e0e46c6b
+      flags: 0
+    RecentlyUsedSceneGuid-6:
       value: 5a010151510d5f5e5f5d5e2049775b44124e4d7c797c7f33287c1863b4e1633e
       flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 55520c075d065808085e0a7411260744414e4c7d292d2568747d4460e3e5313d
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 0655015300535d09585b5f7543210f44464e4078282b73352c7f1b31e3e5646c
+      flags: 0
     RecentlyUsedSceneGuid-9:
-      value: 5150505406005f08085e5c7a12770842414f4b732d2d72602b794e36e6e3603b
+      value: 50090755060c5e090e5b597143260e4445164a2f7d2a70617c2d4e36b0e5633a
       flags: 0
   m_VCAutomaticAdd: 1
   m_VCDebugCom: 0

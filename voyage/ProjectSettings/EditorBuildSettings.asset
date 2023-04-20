@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3/Exchanges/Sydney_Exchange.unity
     guid: b3025e6d5fc387444ad3f447657a6f10
   - enabled: 1
-    path: Assets/Scenes/Level3/Exchanges/Tokyo_Exchange 11.unity
+    path: Assets/Scenes/Level3/Exchanges/Tokyo_Exchange.unity
     guid: 3342c930f8fa2244e9588d954345372c
   - enabled: 1
     path: Assets/Scenes/Level3/Exchanges/Vancouver_Exchange.unity
@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3/Exchanges/Hamburg_Exchange.unity
     guid: 05141227511747349877491652909f1f
   - enabled: 1
-    path: Assets/Scenes/Level3/Exchanges/Hong_Kong_Exchange 10.unity
+    path: Assets/Scenes/Level3/Exchanges/Hong_Kong_Exchange.unity
     guid: 7e57a8469a9b0e64d8910398cc711b86
   - enabled: 1
     path: Assets/Scenes/Level3/Exchanges/London_Exchange.unity

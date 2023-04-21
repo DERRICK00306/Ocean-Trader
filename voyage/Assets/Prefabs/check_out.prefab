@@ -189,6 +189,7 @@ Transform:
   - {fileID: 6289612727468156433}
   - {fileID: 5349136107853673194}
   - {fileID: 5349136106380660485}
+  - {fileID: 4807527935955707794}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1165,9 +1166,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5349136107853673195}
-        m_TargetAssemblyTypeName: checkout, Assembly-CSharp
-        m_MethodName: quit
+      - m_Target: {fileID: 7375831752760711951}
+        m_TargetAssemblyTypeName: Scene2T3, Assembly-CSharp
+        m_MethodName: change_scene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1456,6 +1457,57 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7004850435103367515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4807527935955707794}
+  - component: {fileID: 7375831752760711951}
+  m_Layer: 0
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4807527935955707794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004850435103367515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.078804694, y: -0.26066425, z: 0.3213424}
+  m_LocalScale: {x: 0.24562784, y: 0.2218944, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4567040103934013334}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7375831752760711951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004850435103367515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6058ca590dbc08440b30bab73b6eb243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene_Name: Menu
+  cloud1: {fileID: 1393199553942880212, guid: 73f02a8b907976649840a461d8bbdcfb, type: 3}
+  cloud2: {fileID: 1961631366139048466, guid: ceecc48fa79f31c46abc9c57ea59edde, type: 3}
+  warning1: {fileID: 4274311179127548181, guid: 144d534b0ec814de2966f5938c4028e4, type: 3}
+  warning2: {fileID: 4406122722975227538, guid: f3fc2cff6be354f649e70897fdd27b30, type: 3}
+  audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
+  checkout: {fileID: 4567040103934013335}
 --- !u!1 &8021211400520829484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,3 +1609,4 @@ MonoBehaviour:
   soundPlayer2: {fileID: 0}
   soundPlayer3: {fileID: 0}
   soundPlayer4: {fileID: 0}
+  soundPlayer5: {fileID: 0}

@@ -40,10 +40,10 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1, 9] = 9;
 
         // Prices
-        shopItems[2, 1] = 1000;
-        shopItems[2, 2] = 200;
-        shopItems[2, 3] = 300;
-        shopItems[2, 4] = 400;
+        shopItems[2, 1] = 200;
+        shopItems[2, 2] = 500;
+        shopItems[2, 3] = 100;
+        shopItems[2, 4] = 300;
         shopItems[2, 5] = 0;
         shopItems[2, 6] = 0;
         shopItems[2, 7] = 0;
@@ -51,9 +51,9 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 9] = 0;
 
         // Quantities
-        shopItems[3, 1] = 2;
-        shopItems[3, 2] = 2;
-        shopItems[3, 3] = 10;
+        shopItems[3, 1] = 1;
+        shopItems[3, 2] = 1;
+        shopItems[3, 3] = 2;
         shopItems[3, 4] = 2;
         shopItems[3, 5] = 0;
         shopItems[3, 6] = 0;
@@ -64,7 +64,7 @@ public class ShopManagerScript : MonoBehaviour
         // Effects
         shopItems[4, 1] = 10;
         shopItems[4, 2] = 10;
-        shopItems[4, 3] = 10;
+        shopItems[4, 3] = 50;
         shopItems[4, 4] = 10;
         shopItems[4, 5] = 10;
         shopItems[4, 6] = 10;

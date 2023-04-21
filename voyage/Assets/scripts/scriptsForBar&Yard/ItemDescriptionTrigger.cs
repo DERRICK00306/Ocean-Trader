@@ -27,6 +27,7 @@ public class ItemDescriptionTrigger : MonoBehaviour
 
     public void TriggerDescription()
     {
+        FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect4();
         FindObjectOfType<ItemManager>().StartDescription(item);
     }
 }

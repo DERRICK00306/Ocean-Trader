@@ -11,6 +11,7 @@ public class sail : MonoBehaviour
     public static int change = 0;
     public static int arrival = 1;
     public static int portarrival = 0;
+    public static int checkoutput = 0;
 
     float speed = 0;
     int check = Global.GameAttribute["Speed"];
@@ -22,12 +23,21 @@ public class sail : MonoBehaviour
         {
             transform.position = GameObject.Find("remember").GetComponent<remember>().position;
         }
+
+        if (sail.change == 0)
+        {
+            transform.position = ports[0].transform.position;
+        }
     }
 
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (sail.arrival == 1)
+        {
+
+        }
         Global.counttime = Global.counttime + 1;
         if (check == 0)
         {
@@ -165,7 +175,7 @@ public class sail : MonoBehaviour
             {
                 route = "5-1";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -192,7 +202,7 @@ public class sail : MonoBehaviour
             {
                 route = "12-0";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -212,7 +222,7 @@ public class sail : MonoBehaviour
             {
                 route = "3-2";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -231,7 +241,7 @@ public class sail : MonoBehaviour
             {
                 route = "2-3";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -256,7 +266,7 @@ public class sail : MonoBehaviour
             {
                 route = "13-4";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -279,7 +289,7 @@ public class sail : MonoBehaviour
             {
                 route = "9-5";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -303,7 +313,7 @@ public class sail : MonoBehaviour
             {
                 route = "10-6";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -324,7 +334,7 @@ public class sail : MonoBehaviour
             {
                 route = "10-7";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -339,7 +349,7 @@ public class sail : MonoBehaviour
             {
                 route = "9-8";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -362,7 +372,7 @@ public class sail : MonoBehaviour
             {
                 route = "5-9";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -390,7 +400,7 @@ public class sail : MonoBehaviour
             {
                 route = "7-10";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -410,7 +420,7 @@ public class sail : MonoBehaviour
             {
                 route = "13-11";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -435,7 +445,7 @@ public class sail : MonoBehaviour
             {
                 route = "0-12";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -459,7 +469,7 @@ public class sail : MonoBehaviour
             {
                 route = "4-13";
             }
-            sail.arrival = 0;
+            
         }
 
 
@@ -478,6 +488,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[0].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, speed);
             }
             if (transform.position == routes[0].transform.position)
@@ -507,6 +518,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[0].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[0].transform.position, speed);
             }
             if (transform.position == routes[0].transform.position)
@@ -534,6 +546,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[1].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[1].transform.position, speed);
             }
             if (transform.position == routes[1].transform.position)
@@ -570,6 +583,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[2].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[2].transform.position, speed);
             }
             if (transform.position == routes[2].transform.position)
@@ -607,6 +621,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[3].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[3].transform.position, speed);
             }
             if (transform.position == routes[3].transform.position)
@@ -653,6 +668,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[5].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[5].transform.position, speed);
             }
             if (transform.position == routes[5].transform.position)
@@ -700,6 +716,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[6].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[6].transform.position, speed);
             }
             if (transform.position == routes[6].transform.position)
@@ -740,6 +757,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[7].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[7].transform.position, speed);
             }
             if (transform.position == routes[7].transform.position)
@@ -777,6 +795,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[8].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[8].transform.position, speed);
             }
             if (transform.position == routes[8].transform.position)
@@ -824,6 +843,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[10].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[10].transform.position, speed);
             }
             if (transform.position == routes[10].transform.position)
@@ -874,6 +894,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[11].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[11].transform.position, speed);
             }
             if (transform.position == routes[11].transform.position)
@@ -914,6 +935,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[12].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[12].transform.position, speed);
             }
             if (transform.position == routes[12].transform.position)
@@ -954,6 +976,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[13].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[13].transform.position, speed);
             }
             if (transform.position == routes[13].transform.position)
@@ -1004,6 +1027,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[15].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[15].transform.position, speed);
             }
             if (transform.position == routes[15].transform.position)
@@ -1051,6 +1075,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[16].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, speed);
             }
             if (transform.position == routes[16].transform.position)
@@ -1079,6 +1104,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[16].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[16].transform.position, speed);
             }
             if (transform.position == routes[16].transform.position)
@@ -1111,6 +1137,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[17].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[17].transform.position, speed);
             }
             if (transform.position == routes[17].transform.position)
@@ -1150,6 +1177,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[18].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[18].transform.position, speed);
             }
             if (transform.position == routes[18].transform.position)
@@ -1188,6 +1216,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[19].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, speed);
             }
             if (transform.position == routes[19].transform.position)
@@ -1216,6 +1245,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[19].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[19].transform.position, speed);
             }
             if (transform.position == routes[19].transform.position)
@@ -1249,6 +1279,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[20].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[20].transform.position, speed);
             }
             if (transform.position == routes[20].transform.position)
@@ -1300,6 +1331,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[22].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[22].transform.position, speed);
             }
             if (transform.position == routes[22].transform.position)
@@ -1348,6 +1380,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[23].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[23].transform.position, speed);
             }
             if (transform.position == routes[23].transform.position)
@@ -1397,6 +1430,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[25].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[25].transform.position, speed);
             }
             if (transform.position == routes[25].transform.position)
@@ -1446,6 +1480,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[26].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[26].transform.position, speed);
             }
             if (transform.position == routes[26].transform.position)
@@ -1495,6 +1530,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[28].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[28].transform.position, speed);
             }
             if (transform.position == routes[28].transform.position)
@@ -1542,6 +1578,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[29].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[29].transform.position, speed);
             }
             if (transform.position == routes[29].transform.position)
@@ -1592,6 +1629,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[31].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[31].transform.position, speed);
             }
             if (transform.position == routes[31].transform.position)
@@ -1638,6 +1676,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[32].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, speed);
             }
             if (transform.position == routes[32].transform.position)
@@ -1667,6 +1706,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[32].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[32].transform.position, speed);
             }
             if (transform.position == routes[32].transform.position)
@@ -1697,6 +1737,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[33].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, speed);
             }
             if (transform.position == routes[33].transform.position)
@@ -1727,6 +1768,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[33].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[33].transform.position, speed);
             }
             if (transform.position == routes[33].transform.position)
@@ -1758,6 +1800,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[34].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[34].transform.position, speed);
             }
             if (transform.position == routes[34].transform.position)
@@ -1819,6 +1862,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[37].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[37].transform.position, speed);
             }
             if (transform.position == routes[37].transform.position)
@@ -1881,6 +1925,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[38].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[38].transform.position, speed);
             }
             if (transform.position == routes[38].transform.position)
@@ -1940,6 +1985,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[41].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[41].transform.position, speed);
             }
             if (transform.position == routes[41].transform.position)
@@ -1996,6 +2042,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[42].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[42].transform.position, speed);
             }
             if (transform.position == routes[42].transform.position)
@@ -2043,6 +2090,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[44].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[44].transform.position, speed);
             }
             if (transform.position == routes[44].transform.position)
@@ -2090,6 +2138,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[45].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[45].transform.position, speed);
             }
             if (transform.position == routes[45].transform.position)
@@ -2145,6 +2194,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[48].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[48].transform.position, speed);
             }
             if (transform.position == routes[48].transform.position)
@@ -2202,6 +2252,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[49].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[49].transform.position, 0.009f);
             }
             if (transform.position == routes[49].transform.position)
@@ -2242,6 +2293,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[51].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[51].transform.position, 0.005f);
             }
             if (transform.position == routes[51].transform.position)
@@ -2285,6 +2337,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[52].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, speed);
             }
             if (transform.position == routes[52].transform.position)
@@ -2314,6 +2367,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[52].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[52].transform.position, speed);
             }
             if (transform.position == routes[52].transform.position)
@@ -2343,6 +2397,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[53].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, speed);
             }
             if (transform.position == routes[53].transform.position)
@@ -2370,6 +2425,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[53].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[53].transform.position, speed);
             }
             if (transform.position == routes[53].transform.position)
@@ -2399,6 +2455,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[54].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, speed);
             }
             if (transform.position == routes[54].transform.position)
@@ -2428,6 +2485,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[54].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[54].transform.position, speed);
             }
             if (transform.position == routes[54].transform.position)
@@ -2456,6 +2514,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[55].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, speed);
             }
             if (transform.position == routes[55].transform.position)
@@ -2484,6 +2543,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[55].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[55].transform.position, speed);
             }
             if (transform.position == routes[55].transform.position)
@@ -2512,6 +2572,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[56].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, speed);
             }
             if (transform.position == routes[56].transform.position)
@@ -2539,6 +2600,7 @@ public class sail : MonoBehaviour
         {
             if (i == 0 && transform.position != routes[56].transform.position)
             {
+                sail.arrival = 0;
                 transform.position = Vector3.MoveTowards(transform.position, routes[56].transform.position, speed);
             }
             if (transform.position == routes[56].transform.position)

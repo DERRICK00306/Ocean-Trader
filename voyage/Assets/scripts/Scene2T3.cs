@@ -84,6 +84,7 @@ public class Scene2T3 : MonoBehaviour
 
     public void change_scene()
     {
+        
         Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
         Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
         Instantiate(audio_source);

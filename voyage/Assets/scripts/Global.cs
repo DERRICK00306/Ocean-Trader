@@ -127,13 +127,13 @@ public class Global : MonoBehaviour
 
     public static Dictionary<string, int> ShipCost = new Dictionary<string, int>()
     {
-        {"Ship1", 100},
-        {"Ship2", 200},
-        {"Ship3", 500},
-        {"Ship4", 800},
-        {"Ship5", 1000},
-        {"Ship6", 1500},
-        {"Ship7", 3000},
+        {"Ship1", 300},
+        {"Ship2", 400},
+        {"Ship3", 600},
+        {"Ship4", 1000},
+        {"Ship5", 1600},
+        {"Ship6", 2400},
+        {"Ship7", 4000},
     };
 
     public static Dictionary<string, int> ShipSpeed = new Dictionary<string, int>()

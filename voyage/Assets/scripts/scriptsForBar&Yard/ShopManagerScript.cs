@@ -40,8 +40,8 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1, 9] = 9;
 
         // Prices
-        shopItems[2, 1] = 200;
-        shopItems[2, 2] = 500;
+        shopItems[2, 1] = 150;
+        shopItems[2, 2] = 200;
         shopItems[2, 3] = 100;
         shopItems[2, 4] = 300;
         shopItems[2, 5] = 0;

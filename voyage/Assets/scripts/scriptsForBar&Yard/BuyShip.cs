@@ -26,6 +26,15 @@ public class BuyShip : MonoBehaviour
         if (Global.Money >= button.GetComponent<ShipInfoTrigger>().ship.price && button.GetComponent<ShipInfoTrigger>().ship.unlock == false)
         {
 
+            foreach (string ship in Global.ships)
+            {
+                Global.ShipSelect[ship] = false;
+            }
+
+            Global.ShipSelect[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
+
+
+
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect3();
 
             Global.Money -= button.GetComponent<ShipInfoTrigger>().ship.price;

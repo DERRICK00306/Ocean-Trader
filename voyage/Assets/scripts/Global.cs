@@ -80,8 +80,6 @@ public class Global : MonoBehaviour
 
     public static int counttime = 0;
 
-    
-
     public static string[] attributes =
         {
             "",
@@ -103,6 +101,17 @@ public class Global : MonoBehaviour
             "Ship7"
         };
 
+    public static Dictionary<string, bool> ShipSelect = new Dictionary<string, bool>()
+    {
+        {"Ship1", false},
+        {"Ship2", false},
+        {"Ship3", false},
+        {"Ship4", false},
+        {"Ship5", false},
+        {"Ship6", false},
+        {"Ship7", false},
+    };
+
     public static Dictionary<string, bool> ShipStatus = new Dictionary<string, bool>()
     {
         {"Ship1", false},
@@ -113,6 +122,8 @@ public class Global : MonoBehaviour
         {"Ship6", false},
         {"Ship7", false},
     };
+
+    
 
     public static Dictionary<string, int> ShipLoad = new Dictionary<string, int>()
     {

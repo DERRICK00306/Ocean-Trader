@@ -2090,7 +2090,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1551522695}
         m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: QuitGameImmediate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

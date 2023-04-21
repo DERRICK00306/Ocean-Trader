@@ -13,6 +13,14 @@ public class EquipShip : MonoBehaviour
     {
         if (Global.ShipStatus[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] == true)
         {
+            
+            foreach (string ship in Global.ships)
+            {
+                Global.ShipSelect[ship] = false;
+            }
+
+            Global.ShipSelect[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]] = true;
+            
             FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect5();
             Global.Cost = button.GetComponent<ShipInfoTrigger>().ship.cost;
             Global.MaxLoad = Global.ShipLoad[Global.ships[button.GetComponent<ShipInfoTrigger>().ship.itemID]];

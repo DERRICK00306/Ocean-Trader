@@ -24,4 +24,9 @@ public class QuitManager : MonoBehaviour
     {
         Instantiate(closeWarning);
     }
+
+    public void QuitGameImmediate()
+    {
+        Application.Quit();
+    }
 }

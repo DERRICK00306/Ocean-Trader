@@ -32670,6 +32670,7 @@ GameObject:
   - component: {fileID: 1461900380}
   - component: {fileID: 1461900385}
   - component: {fileID: 1461900386}
+  - component: {fileID: 1461900387}
   m_Layer: 7
   m_Name: ship1
   m_TagString: remember
@@ -32739,7 +32740,7 @@ SpriteRenderer:
   m_SortingLayerID: -1895844399
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca0e7118d6afb429589cfe7def1818ba, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -32747,7 +32748,7 @@ SpriteRenderer:
   m_Size: {x: 5.19, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1461900383
@@ -32876,6 +32877,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1461900387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461900379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c8744b03d8245b28c0ad8ae542ac20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 1461900379}
+  shipIcon0: {fileID: 21300000, guid: ca0e7118d6afb429589cfe7def1818ba, type: 3}
+  shipIcon1: {fileID: 21300000, guid: 431863d0360eb4d94b543e9ab595b8ff, type: 3}
+  shipIcon2: {fileID: 21300000, guid: 9c0634db55ae044fba2fe06510169a15, type: 3}
+  shipIcon3: {fileID: 21300000, guid: cfb5256849dcc41f7bfade8d81db68f7, type: 3}
+  shipIcon4: {fileID: 21300000, guid: 8188302e7caf841cdb8a20012b46c4a9, type: 3}
+  shipIcon5: {fileID: 21300000, guid: 208793e604c894d388c76d8ce915a4af, type: 3}
+  shipIcon6: {fileID: 21300000, guid: 89bd063df090f4650a988a4949f69dca, type: 3}
 --- !u!1 &1466578387
 GameObject:
   m_ObjectHideFlags: 0

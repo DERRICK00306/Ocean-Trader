@@ -24,9 +24,9 @@ public class Scene2T3 : MonoBehaviour
 
 
         int truecost = Global.Cost;
-        if (Global.GameAttribute["Strength"] == 10)
+        if (Global.GameAttribute["Strength"] >= 10)
         {
-            truecost = truecost - 50;
+            truecost -= 50;
             if (Global.counttime > 3600)
             {
                 truecost = Global.Cost;
@@ -49,35 +49,35 @@ public class Scene2T3 : MonoBehaviour
         {
             Instantiate(checkout);
         }
-        
 
-        if (Global.MaxLoad > 0)
+        else
         {
-            
-
-            if (Global.Carry <= Global.MaxLoad)
+            if (Global.MaxLoad > 0)
             {
-                Global.Money -= truecost;
-                FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
-                Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
-                Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
-                Instantiate(audio_source);
-                Invoke("change", 1);
+
+
+                if (Global.Carry <= Global.MaxLoad)
+                {
+                    Global.Money -= truecost;
+                    FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
+                    Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
+                    Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
+                    Instantiate(audio_source);
+                    Invoke("change", 1);
+                }
+                else
+                {
+                    FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect2();
+                    Instantiate(warning2);
+                }
+
             }
             else
             {
                 FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect2();
-                Instantiate(warning2);
+                Instantiate(warning1);
             }
-
         }
-        else
-        {
-            FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect2();
-            Instantiate(warning1);
-        }
-           
-
     }
 
 

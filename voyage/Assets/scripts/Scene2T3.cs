@@ -10,12 +10,19 @@ public class Scene2T3 : MonoBehaviour
     public GameObject warning1;
     public GameObject warning2;
     public AudioSource audio_source;
-    
+    public GameObject checkout;
+
+
     // Start is called before the first frame update
 
 
     public void CheckChangeScene()
     {
+
+
+        
+
+
         int truecost = Global.Cost;
         if (Global.GameAttribute["Strength"] == 10)
         {
@@ -38,6 +45,12 @@ public class Scene2T3 : MonoBehaviour
         Global.Carry = carrySum;
 
         
+        if (Global.Carry == 0 && Global.Money <= 0)
+        {
+            Instantiate(checkout);
+        }
+        
+
         if (Global.MaxLoad > 0)
         {
             

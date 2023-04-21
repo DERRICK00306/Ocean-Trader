@@ -62,7 +62,10 @@ public class DialogueTrigger : MonoBehaviour
         "What can I get for you today?",
         "Looking for something specific? Just check if I have it in stock.",
         "Take you time wisely my friend.",
-        "These potions may have some special effects",
+        "Higher speed will make you journey faster!",
+        "If you have high reputation among this area, I'm sure the locals will give you some discount for trade.",
+        "If you need a bit of luck, don't wait to drink the purple one!",
+        "The red wine will make your sailors more energetic, your travel cost will be reduced.",
         "They are my masterpieces",
         "My goods are the best!"
     };

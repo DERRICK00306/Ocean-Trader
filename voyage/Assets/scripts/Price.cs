@@ -40,7 +40,15 @@ public class Price : MonoBehaviour
     {
         if (total1 < Global.Money)
         {
-            Global.Package["Kimono"] += quantity1;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Kimono"] += quantity1 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            } else
+            {
+                Global.Package["Kimono"] += quantity1;
+            }
+                
             Global.Money -= total1;
         }
         else
@@ -64,7 +72,15 @@ public class Price : MonoBehaviour
     {
         if (total2 < Global.Money)
         {
-            Global.Package["Spice"] += quantity2;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Spice"] += quantity2 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Spice"] += quantity2;
+            }
             Global.Money -= total2;
         }
         else
@@ -89,7 +105,15 @@ public class Price : MonoBehaviour
     {
         if (total3 < Global.Money)
         {
-            Global.Package["Tea"] += quantity3;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Tea"] += quantity3 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Tea"] += quantity3;
+            }
             Global.Money -= total3;
         }
         else
@@ -113,7 +137,15 @@ public class Price : MonoBehaviour
     {
         if (total4 < Global.Money)
         {
-            Global.Package["Handcraft"] += quantity4;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Handcraft"] += quantity4 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Handcraft"] += quantity4;
+            }
             Global.Money -= total4;
         }
         else
@@ -138,7 +170,15 @@ public class Price : MonoBehaviour
     {
         if (total5 < Global.Money)
         {
-            Global.Package["Beef"] += quantity5;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Beef"] += quantity5 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Beef"] += quantity5;
+            }
             Global.Money -= total5;
         }
         else
@@ -163,7 +203,15 @@ public class Price : MonoBehaviour
     {
         if (total6 < Global.Money)
         {
-            Global.Package["Milk"] += quantity6;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Milk"] += quantity6 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Milk"] += quantity6;
+            }
             Global.Money -= total6;
         }
         else
@@ -187,7 +235,15 @@ public class Price : MonoBehaviour
     {
         if (total7 < Global.Money)
         {
-            Global.Package["Chocolate"] += quantity7;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Chocolate"] += quantity7 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Chocolate"] += quantity7;
+            }
             Global.Money -= total7;
         }
         else
@@ -212,7 +268,15 @@ public class Price : MonoBehaviour
     {
         if (total8 < Global.Money)
         {
-            Global.Package["Corn"] += quantity8;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Corn"] += quantity8 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Corn"] += quantity8;
+            }
             Global.Money -= total8;
         }
         else
@@ -237,7 +301,15 @@ public class Price : MonoBehaviour
     {
         if (total9 < Global.Money)
         {
-            Global.Package["Fish"] += quantity9;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Fish"] += quantity9 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Fish"] += quantity9;
+            }
             Global.Money -= total9;
         }
         else
@@ -262,7 +334,15 @@ public class Price : MonoBehaviour
     {
         if (total10 < Global.Money)
         {
-            Global.Package["Bread"] += quantity10;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Bread"] += quantity10 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Bread"] += quantity10;
+            }
             Global.Money -= total10;
         }
         else
@@ -286,7 +366,15 @@ public class Price : MonoBehaviour
     {
         if (total11 < Global.Money)
         {
-            Global.Package["Wine"] += quantity11;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Wine"] += quantity11 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Wine"] += quantity11;
+            }
             Global.Money -= total11;
         }
         else
@@ -311,7 +399,15 @@ public class Price : MonoBehaviour
     {
         if (total12 < Global.Money)
         {
-            Global.Package["Jewery"] += quantity12;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Jewery"] += quantity12 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Jewery"] += quantity12;
+            }
             Global.Money -= total12;
         }
         else
@@ -336,7 +432,15 @@ public class Price : MonoBehaviour
     {
         if (total13 < Global.Money)
         {
-            Global.Package["Wood"] += quantity13;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Wood"] += quantity13 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Wood"] += quantity13;
+            }
             Global.Money -= total13;
         }
         else
@@ -360,7 +464,15 @@ public class Price : MonoBehaviour
     {
         if (total14 < Global.Money)
         {
-            Global.Package["Fur"] += quantity14;
+            if (Global.GameAttribute["Reputation"] > 0)
+            {
+                Global.Package["Fur"] += quantity14 + Global.GameAttribute["Reputation"];
+                Global.GameAttribute["Reputation"] = 0;
+            }
+            else
+            {
+                Global.Package["Fur"] += quantity14;
+            }
             Global.Money -= total14;
         }
         else

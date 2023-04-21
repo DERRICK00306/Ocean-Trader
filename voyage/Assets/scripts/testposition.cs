@@ -14,5 +14,9 @@ public class testposition : MonoBehaviour
     void Update()
     {
         sail.change = 0;
+        timer.count = 0;
+        timer.countday = 1;
+        timer.countmonth = 1;
+        timer.countyear = 1750;
     }
 }

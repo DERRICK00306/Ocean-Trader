@@ -10,6 +10,27 @@ public class GameInitialisation : MonoBehaviour
         Global.Money = 2500;
         Global.Carry = 0;
         Global.MaxLoad = 0;
+        Global.Cost = 0;
+
+        foreach (string ship in Global.ships)
+        {
+            Global.ShipStatus[ship] = false;
+        }
+
+        foreach (string item in Global.Package.Keys)
+        {
+            Global.Package[item] = 0;
+        }
+
+        foreach (string attribute in Global.GameAttribute.Keys)
+        {
+            Global.GameAttribute[attribute] = 0;
+        }
+
+        foreach (string town in Global.ChinaTown.Keys)
+        {
+            Global.ChinaTown[town] = false;
+        }
     }
 
     // Update is called once per frame

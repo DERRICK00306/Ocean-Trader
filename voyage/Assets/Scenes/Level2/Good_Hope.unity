@@ -606,7 +606,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &399178048
+--- !u!1 &504553177
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -614,11 +614,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 399178049}
-  - component: {fileID: 399178053}
-  - component: {fileID: 399178052}
-  - component: {fileID: 399178051}
-  - component: {fileID: 399178050}
+  - component: {fileID: 504553178}
+  - component: {fileID: 504553182}
+  - component: {fileID: 504553181}
+  - component: {fileID: 504553180}
+  - component: {fileID: 504553179}
   m_Layer: 5
   m_Name: QuitGame
   m_TagString: Untagged
@@ -626,13 +626,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &399178049
+--- !u!224 &504553178
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399178048}
+  m_GameObject: {fileID: 504553177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9998999, y: 0.9998999, z: 0.9998999}
@@ -643,28 +643,29 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -10}
+  m_AnchoredPosition: {x: -10.000005, y: -9.999992}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &399178050
+--- !u!114 &504553179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399178048}
+  m_GameObject: {fileID: 504553177}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e1d65b4fa6d54c68bb04ea6d81c5bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &399178051
+  closeWarning: {fileID: 4406122722975227538, guid: 0e65f509f0afe4bc9b641459e4e42618, type: 3}
+--- !u!114 &504553180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399178048}
+  m_GameObject: {fileID: 504553177}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -698,11 +699,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 399178052}
+  m_TargetGraphic: {fileID: 504553181}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 399178050}
+      - m_Target: {fileID: 504553179}
         m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -714,13 +715,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &399178052
+--- !u!114 &504553181
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399178048}
+  m_GameObject: {fileID: 504553177}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -744,13 +745,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &399178053
+--- !u!222 &504553182
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399178048}
+  m_GameObject: {fileID: 504553177}
   m_CullTransparentMesh: 1
 --- !u!1 &505373354
 GameObject:
@@ -3596,7 +3597,7 @@ RectTransform:
   - {fileID: 1192418157}
   - {fileID: 1042205172}
   - {fileID: 1372342382}
-  - {fileID: 399178049}
+  - {fileID: 504553178}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

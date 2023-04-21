@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class QuitManager : MonoBehaviour
 {
+
+
+    public GameObject closeWarning;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,6 @@ public class QuitManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        Instantiate(closeWarning);
     }
 }

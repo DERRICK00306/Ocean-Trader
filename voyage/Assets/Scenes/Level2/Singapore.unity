@@ -1709,7 +1709,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913648926}
   m_CullTransparentMesh: 1
---- !u!1 &1088924621
+--- !u!1 &1080915360
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1717,11 +1717,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1088924622}
-  - component: {fileID: 1088924626}
-  - component: {fileID: 1088924625}
-  - component: {fileID: 1088924624}
-  - component: {fileID: 1088924623}
+  - component: {fileID: 1080915361}
+  - component: {fileID: 1080915365}
+  - component: {fileID: 1080915364}
+  - component: {fileID: 1080915363}
+  - component: {fileID: 1080915362}
   m_Layer: 5
   m_Name: QuitGame
   m_TagString: Untagged
@@ -1729,13 +1729,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1088924622
+--- !u!224 &1080915361
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088924621}
+  m_GameObject: {fileID: 1080915360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9998999, y: 0.9998999, z: 0.9998999}
@@ -1746,28 +1746,29 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -10}
+  m_AnchoredPosition: {x: -10.000005, y: -9.999992}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1088924623
+--- !u!114 &1080915362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088924621}
+  m_GameObject: {fileID: 1080915360}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e1d65b4fa6d54c68bb04ea6d81c5bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1088924624
+  closeWarning: {fileID: 4406122722975227538, guid: 0e65f509f0afe4bc9b641459e4e42618, type: 3}
+--- !u!114 &1080915363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088924621}
+  m_GameObject: {fileID: 1080915360}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -1801,11 +1802,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1088924625}
+  m_TargetGraphic: {fileID: 1080915364}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1088924623}
+      - m_Target: {fileID: 1080915362}
         m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1817,13 +1818,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1088924625
+--- !u!114 &1080915364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088924621}
+  m_GameObject: {fileID: 1080915360}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1847,13 +1848,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1088924626
+--- !u!222 &1080915365
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088924621}
+  m_GameObject: {fileID: 1080915360}
   m_CullTransparentMesh: 1
 --- !u!1 &1107868676
 GameObject:
@@ -4171,7 +4172,7 @@ RectTransform:
   - {fileID: 1965208119}
   - {fileID: 1358418993}
   - {fileID: 196364251}
-  - {fileID: 1088924622}
+  - {fileID: 1080915361}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

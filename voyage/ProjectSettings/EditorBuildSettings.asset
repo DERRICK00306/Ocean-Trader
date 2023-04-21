@@ -72,7 +72,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2/Brenos_Aries.unity
     guid: e1fa2b5d1f9e93540853d8901e3caae4
   - enabled: 1
-    path: Assets/Scenes/Level1/Story.unity
+    path: Assets/Scenes/Level0/Story.unity
     guid: 3fe35b46232294d439bee8f969388305
   - enabled: 1
     path: Assets/Scenes/Level2/Casablanca.unity

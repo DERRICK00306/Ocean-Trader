@@ -3214,7 +3214,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764538421}
   m_CullTransparentMesh: 1
---- !u!1 &1796525001
+--- !u!1 &1801559831
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3222,11 +3222,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1796525002}
-  - component: {fileID: 1796525006}
-  - component: {fileID: 1796525005}
-  - component: {fileID: 1796525004}
-  - component: {fileID: 1796525003}
+  - component: {fileID: 1801559832}
+  - component: {fileID: 1801559836}
+  - component: {fileID: 1801559835}
+  - component: {fileID: 1801559834}
+  - component: {fileID: 1801559833}
   m_Layer: 5
   m_Name: QuitGame
   m_TagString: Untagged
@@ -3234,13 +3234,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1796525002
+--- !u!224 &1801559832
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796525001}
+  m_GameObject: {fileID: 1801559831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9998999, y: 0.9998999, z: 0.9998999}
@@ -3251,28 +3251,29 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -10}
+  m_AnchoredPosition: {x: -10.000005, y: -9.999992}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1796525003
+--- !u!114 &1801559833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796525001}
+  m_GameObject: {fileID: 1801559831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e1d65b4fa6d54c68bb04ea6d81c5bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1796525004
+  closeWarning: {fileID: 4406122722975227538, guid: 0e65f509f0afe4bc9b641459e4e42618, type: 3}
+--- !u!114 &1801559834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796525001}
+  m_GameObject: {fileID: 1801559831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -3306,11 +3307,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1796525005}
+  m_TargetGraphic: {fileID: 1801559835}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1796525003}
+      - m_Target: {fileID: 1801559833}
         m_TargetAssemblyTypeName: QuitManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -3322,13 +3323,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1796525005
+--- !u!114 &1801559835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796525001}
+  m_GameObject: {fileID: 1801559831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3352,13 +3353,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1796525006
+--- !u!222 &1801559836
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796525001}
+  m_GameObject: {fileID: 1801559831}
   m_CullTransparentMesh: 1
 --- !u!1 &1812957344
 GameObject:
@@ -4119,7 +4120,7 @@ RectTransform:
   - {fileID: 2016390629}
   - {fileID: 145163048}
   - {fileID: 172726274}
-  - {fileID: 1796525002}
+  - {fileID: 1801559832}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

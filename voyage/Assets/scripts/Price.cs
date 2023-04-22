@@ -38,7 +38,7 @@ public class Price : MonoBehaviour
     // Update is called once per frame
     public void Buy1()
     {
-        if (total1 < Global.Money)
+        if (total1 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -70,7 +70,7 @@ public class Price : MonoBehaviour
     }
     public void Buy2()
     {
-        if (total2 < Global.Money)
+        if (total2 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -103,7 +103,7 @@ public class Price : MonoBehaviour
 
     public void Buy3()
     {
-        if (total3 < Global.Money)
+        if (total3 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -135,7 +135,7 @@ public class Price : MonoBehaviour
     }
     public void Buy4()
     {
-        if (total4 < Global.Money)
+        if (total4 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -168,7 +168,7 @@ public class Price : MonoBehaviour
 
     public void Buy5()
     {
-        if (total5 < Global.Money)
+        if (total5 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -201,7 +201,7 @@ public class Price : MonoBehaviour
 
     public void Buy6()
     {
-        if (total6 < Global.Money)
+        if (total6 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -233,7 +233,7 @@ public class Price : MonoBehaviour
     }
     public void Buy7()
     {
-        if (total7 < Global.Money)
+        if (total7 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -266,7 +266,7 @@ public class Price : MonoBehaviour
 
     public void Buy8()
     {
-        if (total8 < Global.Money)
+        if (total8 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -299,7 +299,7 @@ public class Price : MonoBehaviour
 
     public void Buy9()
     {
-        if (total9 < Global.Money)
+        if (total9 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -332,7 +332,7 @@ public class Price : MonoBehaviour
 
     public void Buy10()
     {
-        if (total10 < Global.Money)
+        if (total10 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -364,7 +364,7 @@ public class Price : MonoBehaviour
     }
     public void Buy11()
     {
-        if (total11 < Global.Money)
+        if (total11 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -397,7 +397,7 @@ public class Price : MonoBehaviour
 
     public void Buy12()
     {
-        if (total12 < Global.Money)
+        if (total12 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -430,7 +430,7 @@ public class Price : MonoBehaviour
 
     public void Buy13()
     {
-        if (total13 < Global.Money)
+        if (total13 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {
@@ -462,7 +462,7 @@ public class Price : MonoBehaviour
     }
     public void Buy14()
     {
-        if (total14 < Global.Money)
+        if (total14 <= Global.Money)
         {
             if (Global.GameAttribute["Reputation"] > 0)
             {

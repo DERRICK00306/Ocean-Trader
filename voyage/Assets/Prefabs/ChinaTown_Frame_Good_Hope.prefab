@@ -790,7 +790,7 @@ MonoBehaviour:
   m_text: "You can build ChinaTown in every port in the world. It is a remarkable
     recognition and a critical criteria for this game.\n\nWe will recognize you as
     \"The Great Sailor\" after you have built 5 Childtowns in the world.\n\nWould
-    you like to spend $3000 to build a ChinaTown here?\n "
+    you like to spend $5000 to build a ChinaTown here?\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}

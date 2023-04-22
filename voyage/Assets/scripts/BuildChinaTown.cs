@@ -9,12 +9,12 @@ public class BuildChinaTown : MonoBehaviour
     public GameObject warning;
     // Start is called before the first frame update
     public void Build() {
-        if (Global.Money < 3000)
+        if (Global.Money < 5000)
         {
             Instantiate(warning);
         }
         else {
-            Global.Money -= 3000;
+            Global.Money -= 5000;
 
             Global.ChinaTown[city_name] = true;
 

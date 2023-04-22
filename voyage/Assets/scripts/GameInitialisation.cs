@@ -17,17 +17,17 @@ public class GameInitialisation : MonoBehaviour
             Global.ShipStatus[ship] = false;
         }
 
-        foreach (string item in Global.Package.Keys)
+        foreach (string item in Global.bag)
         {
             Global.Package[item] = 0;
         }
 
-        foreach (string attribute in Global.GameAttribute.Keys)
+        foreach (string attribute in Global.attributes)
         {
             Global.GameAttribute[attribute] = 0;
         }
 
-        foreach (string town in Global.ChinaTown.Keys)
+        foreach (string town in Global.city)
         {
             Global.ChinaTown[town] = false;
         }

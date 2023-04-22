@@ -160,6 +160,7 @@ public class Global : MonoBehaviour
 
     public static Dictionary<string, int> GameAttribute = new Dictionary<string, int>()
     {
+        {"", 0 },
         {"Speed", 0},
         {"Reputation", 0},
         {"Luck", 0},
@@ -179,5 +180,45 @@ public class Global : MonoBehaviour
         {"New_York",false},{"San_Francisco",false},{"Vancouver",false},{"Brenos_Aries",false}
     };
 
-    
+    public static string[] bag =
+    {
+        "Corn",
+        "Fish",
+        "Bread",
+        "Beef",
+        "Wood",
+        "Tea",
+        "Kimono",
+        "Spice",
+        "Milk",
+        "Hat",
+        "Beer",
+        "Wine",
+        "Fur",
+        "Handcraft",
+        "Compass",
+        "Chocolate",
+        "Jeans",
+        "Jewery",
+        "Sausage"
+    };
+
+    public static string[] city =
+    {
+        "Hong_Kong",
+        "Singapore",
+        "Tokyo",
+        "Sydney",
+        "London",
+        "Hamburg",
+        "Barcelona",
+        "Good_Hope",
+        "Alexandria",
+        "Casablanca",
+        "New_York",
+        "San_Francisco",
+        "Vancouver",
+        "Brenos_Aries"
+    };
+
 }

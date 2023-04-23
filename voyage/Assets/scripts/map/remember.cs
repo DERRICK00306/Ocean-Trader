@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class remember : MonoBehaviour
 {
-    public Vector3 position;
+    public static Vector3 position;
     // Start is called before the first frame update
 
     void Awake()

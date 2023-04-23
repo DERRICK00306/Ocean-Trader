@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class testposition : MonoBehaviour
 {
+    public static int continuegame = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sail.change = 0;       
     }
 
     // Update is called once per frame
     void Update()
     {
-        sail.change = 0;
-        timer.count = 0;
-        timer.countday = 1;
-        timer.countmonth = 1;
-        timer.countyear = 1750;
+        
     }
 }

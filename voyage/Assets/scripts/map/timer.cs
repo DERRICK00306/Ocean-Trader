@@ -35,7 +35,7 @@ public class timer : MonoBehaviour
             countyear = countyear + 1;
         }
         
-        if (countyear == 1800)
+        if (countyear == 1790)
         {
             Instantiate(a);
         }

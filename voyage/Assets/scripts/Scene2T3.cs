@@ -131,4 +131,26 @@ public class Scene2T3 : MonoBehaviour
         Instantiate(audio_source);
         Invoke("ChangePre", 1);
     }
+
+    public void continue_game()
+    {
+        sail.change = 1;
+        Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
+        Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
+        Instantiate(audio_source);
+        Invoke("change", 1);
+    }
+
+    public void new_game()
+    {
+        sail.change = 0;
+        timer.count = 0;
+        timer.countday = 1;
+        timer.countmonth = 1;
+        timer.countyear = 1750;
+        Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
+        Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
+        Instantiate(audio_source);
+        Invoke("change", 1);
+    }
 }

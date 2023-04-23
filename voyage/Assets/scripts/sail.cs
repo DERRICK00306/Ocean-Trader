@@ -21,7 +21,7 @@ public class sail : MonoBehaviour
     {
         if (sail.change == 1)
         {
-            transform.position = GameObject.Find("remember").GetComponent<remember>().position;
+            transform.position = remember.position;
         }
 
         if (sail.change == 0)

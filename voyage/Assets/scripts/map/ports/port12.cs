@@ -33,7 +33,7 @@ public class port12 : MonoBehaviour
             }
             if (timer < 0)
             {
-                GameObject.Find("remember").GetComponent<remember>().position = GameObject.Find("ship1").transform.position;
+                remember.position = GameObject.Find("ship1").transform.position;
 
 
                 SceneManager.LoadScene("San_Francisco");

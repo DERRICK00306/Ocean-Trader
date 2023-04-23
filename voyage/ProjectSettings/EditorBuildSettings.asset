@@ -104,49 +104,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1/Map.unity
     guid: 2ad2c563e008b4727839ae40f03edc4c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Level3/Exchanges/Hong_Kong_Exchange.unity
-    guid: 8777b9dc95a31244da141993e4541a37
-  - enabled: 0
-    path: Assets/Scenes/Level3/Exchanges/Japan_Exchange.unity
-    guid: af252bbc182156c46ae6969423d221ee
   - enabled: 1
     path: Assets/Scenes/Level2/Hong_Kong.unity
     guid: ed55ef4255373b040982dc5ea6fbae04
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}

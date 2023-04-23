@@ -12,6 +12,7 @@ public class Scene2T3 : MonoBehaviour
     public AudioSource audio_source;
     public GameObject checkout;
     public GameObject warning3;
+    public GameObject d;
 
     // Start is called before the first frame update
 
@@ -105,6 +106,7 @@ public class Scene2T3 : MonoBehaviour
             }
         }
         Global.Money -= truecost;
+        if (d != null) d.SetActive(false);
         Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
         Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
         Instantiate(audio_source);
@@ -113,7 +115,7 @@ public class Scene2T3 : MonoBehaviour
 
     public void change_scene()
     {
-        
+        if (d != null) d.SetActive(false);
         Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
         Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
         Instantiate(audio_source);

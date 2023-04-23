@@ -1045,3 +1045,4 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 4567040103934013335, guid: 611a30ebef928fd479c012517b2fc792, type: 3}
   warning3: {fileID: 4406122722975227538}
+  d: {fileID: 4406122722975227538}

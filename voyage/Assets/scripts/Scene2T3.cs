@@ -11,7 +11,7 @@ public class Scene2T3 : MonoBehaviour
     public GameObject warning2;
     public AudioSource audio_source;
     public GameObject checkout;
-
+    public GameObject warning3;
 
     // Start is called before the first frame update
 
@@ -58,12 +58,22 @@ public class Scene2T3 : MonoBehaviour
 
                 if (Global.Carry <= Global.MaxLoad)
                 {
-                    Global.Money -= truecost;
-                    FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
-                    Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
-                    Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
-                    Instantiate(audio_source);
-                    Invoke("change", 1);
+                    if (Global.Carry == 0)
+                    {
+                        FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect2();
+                        Instantiate(warning3);
+                    }
+                    else
+                    {
+                        Global.Money -= truecost;
+                        FindObjectOfType<Camera>().GetComponent<PlaySound>().PlayThisSoundEffect1();
+                        Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
+                        Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
+                        Instantiate(audio_source);
+                        Global.NewGame = false;
+                        Invoke("change", 1);
+                    }
+                    
                 }
                 else
                 {
@@ -80,7 +90,26 @@ public class Scene2T3 : MonoBehaviour
         }
     }
 
+    public void IgnoreWarning()
+    {
+        Global.NewGame = false;
 
+        int truecost = Global.Cost;
+        if (Global.GameAttribute["Strength"] >= 10)
+        {
+            truecost -= 50;
+            if (Global.counttime > 3600)
+            {
+                truecost = Global.Cost;
+                Global.GameAttribute["Strength"] = 0;
+            }
+        }
+        Global.Money -= truecost;
+        Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
+        Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
+        Instantiate(audio_source);
+        Invoke("change", 1);
+    }
 
     public void change_scene()
     {

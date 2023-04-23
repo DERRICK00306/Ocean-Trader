@@ -15,19 +15,6 @@ public class ShopManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        // Names
-        itemNames[1] = "";
-        itemNames[2] = "";
-        itemNames[3] = "";
-        itemNames[4] = "";
-        itemNames[5] = "";
-        itemNames[6] = "";
-        itemNames[7] = "";
-        itemNames[8] = "";
-        itemNames[9] = "";
-        */
-
         // IDs
         shopItems[1, 1] = 1;
         shopItems[1, 2] = 2;
@@ -43,7 +30,7 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 1] = 150;
         shopItems[2, 2] = 200;
         shopItems[2, 3] = 100;
-        shopItems[2, 4] = 300;
+        shopItems[2, 4] = 250;
         shopItems[2, 5] = 0;
         shopItems[2, 6] = 0;
         shopItems[2, 7] = 0;

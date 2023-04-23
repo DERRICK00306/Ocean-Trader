@@ -68,6 +68,9 @@ public class Global : MonoBehaviour
                                                      } },
         };
 
+    public static bool NewGame = true;
+
+
     public static int Money = 999999;
 
     public static int Carry;

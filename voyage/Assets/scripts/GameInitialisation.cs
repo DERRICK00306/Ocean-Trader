@@ -7,6 +7,8 @@ public class GameInitialisation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sail.change = 0;
+
         Global.Money = 2500;
         Global.Carry = 0;
         Global.MaxLoad = 0;

@@ -8,7 +8,7 @@ public class GameInitialisation : MonoBehaviour
     void Start()
     {
         sail.change = 0;
-
+        Global.Count = 0;
         Global.Money = 2500;
         Global.Carry = 0;
         Global.MaxLoad = 0;

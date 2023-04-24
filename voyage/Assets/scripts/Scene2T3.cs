@@ -71,7 +71,8 @@ public class Scene2T3 : MonoBehaviour
                         Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
                         Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
                         Instantiate(audio_source);
-                        Global.NewGame = false;
+                        
+                        Global.CurrentScene = "Map";
                         Invoke("change", 1);
                     }
                     
@@ -124,6 +125,11 @@ public class Scene2T3 : MonoBehaviour
 
     public void change() { SceneManager.LoadScene(Scene_Name); }
 
+    public void ChangeCurrent()
+    {
+        SceneManager.LoadScene(Global.CurrentScene);
+    }
+
     public void ChangePre() { SceneManager.LoadScene(Global.PreviousScene); }
 
     public void change_to_previous_scene()
@@ -136,15 +142,21 @@ public class Scene2T3 : MonoBehaviour
 
     public void continue_game()
     {
-        sail.change = 1;
+        if (Global.Count == 0)
+        {
+            sail.change = 0;
+        }
+        else sail.change = 1;
         Instantiate(cloud1, new Vector2(-18, -6), Quaternion.identity);
         Instantiate(cloud2, new Vector2(18, 8), Quaternion.identity);
         Instantiate(audio_source);
-        Invoke("change", 1);
+        Invoke("ChangeCurrent", 1);
     }
 
     public void new_game()
     {
+        Global.CurrentScene = "Story";
+        Global.NewGame = false;
         sail.change = 0;
         timer.count = 0;
         timer.countday = 1;

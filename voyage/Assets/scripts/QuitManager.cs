@@ -22,6 +22,7 @@ public class QuitManager : MonoBehaviour
 
     public void QuitGame()
     {
+       
         Instantiate(closeWarning);
     }
 

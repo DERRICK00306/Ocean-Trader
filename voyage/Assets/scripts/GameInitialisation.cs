@@ -13,7 +13,8 @@ public class GameInitialisation : MonoBehaviour
         Global.Carry = 0;
         Global.MaxLoad = 0;
         Global.Cost = 0;
-
+        
+        
         foreach (string ship in Global.ships)
         {
             Global.ShipStatus[ship] = false;

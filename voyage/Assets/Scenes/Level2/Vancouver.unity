@@ -301,6 +301,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a124cc6cf78f641099b921edcdf96508, type: 3}
+--- !u!1 &382792789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382792791}
+  - component: {fileID: 382792790}
+  m_Layer: 0
+  m_Name: RecordScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &382792790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382792789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff2015f6f5f34477b3e2ab27d06e995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: Vancouver
+--- !u!4 &382792791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382792789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.48839867, y: 1.1101974, z: -9.941249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &422510017 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8187966373196130360, guid: c8c70a547808f421eb9ee6650fac51f4, type: 3}
@@ -975,6 +1020,7 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 0}
   warning3: {fileID: 0}
+  d: {fileID: 0}
 --- !u!4 &821455861
 Transform:
   m_ObjectHideFlags: 0
@@ -2100,6 +2146,7 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 0}
   warning3: {fileID: 0}
+  d: {fileID: 0}
 --- !u!4 &1288898522
 Transform:
   m_ObjectHideFlags: 0

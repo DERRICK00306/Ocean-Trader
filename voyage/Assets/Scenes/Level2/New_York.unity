@@ -836,6 +836,7 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 0}
   warning3: {fileID: 0}
+  d: {fileID: 0}
 --- !u!4 &452223806
 Transform:
   m_ObjectHideFlags: 0
@@ -3141,6 +3142,7 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 0}
   warning3: {fileID: 0}
+  d: {fileID: 0}
 --- !u!4 &1605021937
 Transform:
   m_ObjectHideFlags: 0
@@ -3269,6 +3271,7 @@ MonoBehaviour:
   audio_source: {fileID: 6300946479845386378, guid: 541f8e4fba0eac94caecec1cebcfaaa4, type: 3}
   checkout: {fileID: 0}
   warning3: {fileID: 0}
+  d: {fileID: 0}
 --- !u!4 &1648684007
 Transform:
   m_ObjectHideFlags: 0
@@ -3610,6 +3613,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093793887}
   m_CullTransparentMesh: 1
+--- !u!1 &2140282895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140282897}
+  - component: {fileID: 2140282896}
+  m_Layer: 0
+  m_Name: RecordScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2140282896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140282895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff2015f6f5f34477b3e2ab27d06e995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: New_York
+--- !u!4 &2140282897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140282895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.48839867, y: 1.1101974, z: -9.941249}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &8220373661422073240
 RectTransform:
   m_ObjectHideFlags: 0

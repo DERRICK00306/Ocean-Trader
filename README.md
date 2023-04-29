@@ -15,7 +15,6 @@ The game is built as .exe software, to play the game, please allocate Ocean Trad
 <br>
 <br>
 <a>Here's a </a><a href="https://drive.google.com/file/d/1cCe5CbcPei1IhAYCwkNAp56pLibeD_gQ/view?usp=share_link">trailer videa</a><a> so that you can grab more information</a>
-https://user-images.githubusercontent.com/86137299/235289389-6fbc6e97-5c0f-49d2-9f0a-eb87c723d052.mp4
 <br>
 <br>
 <br>

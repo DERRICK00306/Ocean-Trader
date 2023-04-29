@@ -15,7 +15,7 @@ The game is built as .exe software, to play the game, please allocate Ocean Trad
 <br>
 <br>
 <a>Here's a </a><a href="https://drive.google.com/file/d/1cCe5CbcPei1IhAYCwkNAp56pLibeD_gQ/view?usp=share_link">trailer videa</a><a> so that you can grab more information</a>
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)]([https://youtu.be/vt5fpE0bzSY](https://drive.google.com/file/d/1cCe5CbcPei1IhAYCwkNAp56pLibeD_gQ/view?usp=share_link))
+https://user-images.githubusercontent.com/86137299/235289389-6fbc6e97-5c0f-49d2-9f0a-eb87c723d052.mp4
 <br>
 <br>
 <br>
@@ -26,6 +26,9 @@ After entering the game, there would be a menu. Please click "New Game" to start
 <div align="center"><img src="https://raw.githubusercontent.com/DERRICK00306/Unity-Navigation-Times/main/menu.png" width = "500px"></div>
 <br>
 <br>
+
+
+
 
 ### 3.2 The Story and the Icon
 Upon entering a new game, a story scene would be shown. Please notice that the red exclamatory mark could be interacted throughout the game. After entering the port scene. Several icons could be noticed. Feel free to interact with them to explore. You can also access basic player information on the scene. The four places you could go are exchange house, pub, shipyard and Chinatown.<br>

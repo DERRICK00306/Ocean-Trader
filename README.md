@@ -1,4 +1,5 @@
 # <p align = "center">Ocean Trader Gameplay Instruction</p>
+<a>Here's a </a><a href="https://innoacademy.engg.hku.hk/gameot/">HKU Inno Show Page</a><a> for our project</a>
 ## 1. Installation Instruction
 The game is built as .exe software, to play the game, please allocate Ocean Trader.exe and unzip the correspanding folder. Then click the .exe to start.
 <br>

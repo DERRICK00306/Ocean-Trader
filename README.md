@@ -54,7 +54,7 @@ Players could use the money to buy and sell merchandise among the ports and disc
 <a>This is the group's first game. The development process was full of joy, debate and discoveration. The group hopes you could enjoy the game. In cae you have more questions, please </a><a href="u3563700@connect.hku.hk">contact</a><a> us.</a>
 <br>
 <br>
-## 2. Contributors
+## 6. Contributors
 Chen Hanyang 3035772420 <br>
 Gao Rundong 3035951349 <br>
 Ou Chupeng derrick00306@gmail.com <br>
